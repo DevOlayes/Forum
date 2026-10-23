@@ -50,9 +50,9 @@ jobs:
           fi
 
       - name: Deploy this commit to Cloudflare
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          command: deploy --message "GitHub commit ${{ github.sha }}"
           wranglerVersion: "4.x"
