@@ -37,3 +37,14 @@ npm run preview
 This repository is the **UI/UX phase**. The current discussion examples and counters are illustrative preview data. Form submissions, votes, reactions, replies, registration, notifications, reputation and club membership are not persisted to a backend yet. Fixture information is intentionally not presented as live data. Supabase authentication/database, verified fixtures/results, moderation services, accessibility QA and end-to-end testing are follow-on implementation work.
 
 Before launch, validate the build and test every screen on real mobile and desktop viewport sizes.
+
+## Automated build and deployment
+
+Pushing to `main` runs `npm install`, `npm run build`, and then deploys the Vite `dist/` assets to the existing Cloudflare Worker named `forum` using `wrangler.jsonc`.
+
+Configure these two GitHub Actions repository secrets before the deploy step can succeed:
+
+- `CLOUDFLARE_API_TOKEN`: a Cloudflare API token with permission to edit Workers scripts for the target account.
+- `CLOUDFLARE_ACCOUNT_ID`: the Cloudflare account ID that owns the `forum` Worker.
+
+Add them in **GitHub → DevOlayes/Forum → Settings → Secrets and variables → Actions → New repository secret**. Never commit either value to the repository. Once configured, each push to `main` builds first and deploys that exact checked-out commit; inspect the Actions run and Cloudflare Worker version metadata to confirm the result.
