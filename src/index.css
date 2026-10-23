@@ -332,3 +332,52 @@ body{background:#f6f5f0!important;color:#101827}
  .clubhouse-meta span{font-size:9px!important}
  .clubhouse-actions{margin-top:14px!important;justify-content:flex-start!important}
 }
+
+
+/* Final polish: one visual system across Arena, match rooms and clubhouses. */
+.game-arena-strip{
+  border-color:#e4e8df!important;
+  box-shadow:0 3px 12px rgba(16,24,39,.035)!important;
+}
+.game-arena-banner{
+  min-height:112px!important;
+  padding:20px 22px!important;
+  background:linear-gradient(112deg,#101827 0%,#202c40 78%,#27394b 100%)!important;
+}
+.game-arena-banner:after{right:145px!important;opacity:.65!important}
+.game-arena-banner-copy{display:flex!important;flex-direction:column!important;max-width:470px!important}
+.arena-live-kicker{color:#c7f36b!important;letter-spacing:.11em!important;font-size:10px!important;font-weight:850!important}
+.game-arena-banner-copy>strong{max-width:420px!important;font-size:19px!important;letter-spacing:-.025em!important}
+.game-arena-banner-copy>small{font-size:12px!important;color:#cbd2dc!important}
+.game-arena-join{background:#c7f36b!important;color:#101827!important;border:1px solid #c7f36b!important;font-weight:850!important;box-shadow:none!important}
+.game-arena-join:hover{filter:brightness(1.04)!important;transform:translateY(-1px)}
+.game-arena-fixtures-heading{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;padding:13px 15px 9px!important}
+.game-arena-fixtures-heading>strong{font-size:12px!important;letter-spacing:-.01em!important}
+.game-arena-fixtures-heading>span{font-size:10px!important}
+.game-arena-fixture{gap:10px!important;border-color:#e8ebe4!important;background:#fbfcf9!important;transition:border-color .15s ease,background .15s ease!important}
+.game-arena-fixture:hover{border-color:#c7d99e!important;background:#f8faef!important}
+.fixture-teams .mini-team{font-weight:750!important;color:#273349!important}
+.fixture-countdown{color:#77815f!important}
+.game-arena-join-small{color:#526c27!important}
+.clubhouse-hero{position:relative!important;overflow:hidden!important}
+.clubhouse-pattern{pointer-events:none!important}
+.clubhouse-identity{position:relative!important;z-index:1!important}
+.clubhouse-identity .crest-hero{flex-shrink:0!important;border:2px solid var(--club,#c7f36b)!important;border-radius:50%!important;background:#fff!important;box-shadow:0 0 0 4px rgba(255,255,255,.07)!important}
+.clubhouse-identity h1{letter-spacing:-.035em!important}
+.clubhouse-identity h1 span{color:#c7f36b!important}
+.clubhouse-identity p{max-width:560px!important;color:#d0d7e0!important}
+.clubhouse-meta span{color:#d0d7e0!important}
+.arena-room-crest,.arena-mini-crest,.arena-side-crest{display:grid!important;place-items:center!important;overflow:hidden!important;border-radius:50%!important;background:#fff!important;border:2px solid var(--club,#c7f36b)!important}
+.arena-room-crest img,.arena-mini-crest img,.arena-side-crest img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;padding:4px!important}
+.arena-room-crest.arsenal-crest,.arena-mini-crest.arsenal-crest,.arena-side-crest.arsenal-crest{--club:#ef233c!important}
+.arena-room-crest.city-crest,.arena-mini-crest.city-crest,.arena-side-crest.city-crest{--club:#6cabdd!important}
+@media(max-width:700px){
+  .game-arena-banner{padding:16px!important;gap:12px!important}
+  .game-arena-banner-copy>strong{font-size:17px!important;max-width:100%!important}
+  .game-arena-banner-copy>small{font-size:11px!important}
+  .game-arena-fixtures-heading{align-items:flex-start!important;flex-direction:column!important;gap:4px!important}
+  .clubhouse-identity .crest-hero{flex-basis:58px!important;width:58px!important;height:58px!important;padding:5px!important}
+  .clubhouse-identity .crest-hero img{inset:5px!important;width:calc(100% - 10px)!important;height:calc(100% - 10px)!important}
+  .clubhouse-identity h1{font-size:21px!important}
+  .arena-room-crest{width:42px!important;height:42px!important;border-radius:50%!important}
+}
