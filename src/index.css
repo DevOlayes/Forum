@@ -30,3 +30,125 @@
 @media(prefers-reduced-motion:reduce){.left-sidebar{transition:none}}
 
 @media(max-width:760px){.topbar .search-box{display:flex;flex:1 1 auto;min-width:90px;max-width:170px;height:35px;margin-left:auto;padding:0 8px;justify-content:flex-start;background:#f6f6f2;border-color:#eeeee8;gap:6px}.topbar .search-box input{display:block;min-width:0;flex:1;font-size:10px}.topbar .search-box kbd{display:none}.topbar-inner{gap:8px}.brand-mark{font-size:16px}.brand-icon{width:28px;height:28px}.notification-button{width:28px}.top-actions{margin-left:0}}
+
+
+/* Football Forum design refinement — readability, hierarchy and mobile ergonomics */
+:root {
+  --muted: #687487;
+  --line: #e1e5dc;
+}
+body { color: #202b3c; }
+button, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+.page-layout { gap: 24px; padding-top: 24px; }
+@media (min-width: 761px) {
+  .page-layout { grid-template-columns: 205px minmax(0, 1fr) 270px; }
+}
+.sidebar-label, .panel-eyebrow, .section-kicker { font-size: 10px; letter-spacing: 1.1px; }
+.nav-item { font-size: 13px; min-height: 40px; }
+.club-copy strong { font-size: 12px; }
+.club-copy small, .level-card p, .progress-caption { font-size: 10px; }
+.home-intro { padding-bottom: 12px; }
+.home-intro h1 { font-size: clamp(25px, 2.3vw, 32px); line-height: 1.2; letter-spacing: -1px; }
+.home-intro p, .feed-subtitle { font-size: 13px; line-height: 1.55; color: #687487; }
+.match-banner { border-radius: 13px; }
+.match-topline { flex-wrap: wrap; }
+.match-label { font-size: 10px; }
+.match-league { font-size: 9px; }
+.match-bottom > span { font-size: 11px; }
+.match-bottom button { font-size: 11px; }
+.feed-heading { margin-top: 24px; }
+.feed-heading h2 { font-size: 22px; }
+.topic-tabs { gap: 25px; }
+.topic-tabs button { font-size: 13px; padding-bottom: 13px; }
+.quick-compose { min-height: 52px; font-size: 13px; border-color: #e1e5dc; }
+.feed-stream-label { font-size: 10px; }
+.post-card { padding: 16px 17px 0; border-color: #e1e5dc; border-radius: 12px; }
+.post-author strong { font-size: 12px; }
+.post-handle, .post-meta { font-size: 10px; }
+.post-meta { flex-wrap: wrap; line-height: 1.45; }
+.post-tag { font-size: 9px; letter-spacing: .65px; }
+.post-content { padding: 12px 0 14px; }
+.post-content h3 { font-size: 16px; line-height: 1.4; letter-spacing: -.3px; }
+.post-content p { font-size: 13px; line-height: 1.65; color: #596579; }
+.post-actions { gap: 18px; }
+.post-actions button { font-size: 12px; min-height: 30px; }
+.join-debate { font-size: 12px; min-height: 30px; }
+.side-panel { padding: 15px; }
+.panel-description { font-size: 12px; line-height: 1.6; }
+.text-link, .panel-link { font-size: 12px; }
+.club-card h3 { font-size: 15px; }
+.club-card p { font-size: 12px; line-height: 1.6; color: #687487; }
+.form-control, input, textarea, select { font-size: 14px; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid #a5cf4e;
+  outline-offset: 2px;
+}
+@media (max-width: 760px) {
+  .topbar { height: 62px; }
+  .topbar-inner { padding: 0 12px; }
+  .top-actions { gap: 5px; }
+  .brand-mark { font-size: 16px; letter-spacing: -.7px; }
+  .brand-icon { width: 29px; height: 29px; border-radius: 9px; }
+  .page-layout { padding: 0 12px 28px; display: block; }
+  .feed-column { padding: 14px 0 28px; }
+  .home-intro { padding: 10px 2px 14px; }
+  .home-intro h1 { font-size: clamp(25px, 7vw, 30px); line-height: 1.18; letter-spacing: -.9px; max-width: 360px; }
+  .home-intro p { font-size: 13px; line-height: 1.55; max-width: 34em; }
+  .match-banner { padding: 13px 13px 0; }
+  .match-label { font-size: 9px; }
+  .match-league { font-size: 8px; }
+  .match-main { gap: 10px; }
+  .match-team { gap: 7px; }
+  .match-crest { width: 36px; height: 36px; border-radius: 10px; font-size: 18px; }
+  .match-team strong { font-size: 12px; }
+  .match-team small { font-size: 8px; }
+  .match-vs { min-width: 45px; }
+  .match-vs span { font-size: 16px; }
+  .match-vs small { font-size: 7px; white-space: normal; }
+  .match-bottom { align-items: flex-start; }
+  .match-bottom > span { font-size: 10px; line-height: 1.4; }
+  .match-bottom button { font-size: 10px; text-align: right; }
+  .feed-heading { margin: 22px 0 12px; align-items: flex-end; gap: 10px; }
+  .feed-heading h2 { font-size: 19px; line-height: 1.3; }
+  .feed-subtitle { font-size: 12px; }
+  .sort-button { flex-shrink: 0; font-size: 11px; padding: 8px; }
+  .topic-tabs { gap: 22px; margin-right: -12px; padding-right: 12px; }
+  .topic-tabs button { font-size: 12px; padding-bottom: 12px; }
+  .quick-compose { margin: 13px 0 12px; padding: 10px; min-height: 49px; font-size: 12px; }
+  .feed-stream-label { font-size: 9px; }
+  .posts-list { gap: 10px; }
+  .post-card { padding: 12px 12px 0; border-radius: 11px; }
+  .post-top { gap: 9px; }
+  .post-author strong { font-size: 12px; }
+  .post-handle { font-size: 10px; }
+  .post-meta { font-size: 9px; gap: 5px; }
+  .post-content { padding: 11px 0 12px; }
+  .post-tag { font-size: 9px; margin-bottom: 7px; }
+  .post-content h3 { font-size: 15px; line-height: 1.42; letter-spacing: -.15px; margin-bottom: 7px; }
+  .post-content p { font-size: 12px; line-height: 1.62; color: #596579; }
+  .post-footer { padding: 8px 0; }
+  .post-actions { gap: 14px; }
+  .post-actions button { font-size: 11px; min-height: 32px; gap: 5px; }
+  .join-debate { font-size: 11px; min-height: 32px; }
+  .right-sidebar { gap: 12px; }
+  .side-panel { padding: 14px; }
+  .panel-description { font-size: 12px; }
+  .club-grid { gap: 10px; }
+  .club-card { padding: 12px; }
+  .club-card h3 { font-size: 14px; }
+  .club-card p { font-size: 12px; line-height: 1.55; }
+  .secondary-button, .locked-button { min-height: 36px; font-size: 11px; }
+  .page-heading h1 { font-size: 28px; line-height: 1.2; }
+  .page-heading p { font-size: 13px; line-height: 1.6; }
+}
+@media (max-width: 360px) {
+  .topbar-inner { gap: 6px; }
+  .brand-mark { font-size: 14px; gap: 6px; }
+  .topbar .search-box { max-width: 118px; }
+  .match-main { gap: 6px; }
+  .match-team { gap: 5px; }
+  .match-crest { width: 31px; height: 32px; }
+  .match-team strong { font-size: 11px; }
+  .post-actions { gap: 10px; }
+  .join-debate { gap: 3px; font-size: 10px; }
+}
