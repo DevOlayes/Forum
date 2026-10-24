@@ -1934,3 +1934,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(prefers-reduced-motion:reduce){
   .arena-chat-panel .arena-chat-stream,.arena-jump-latest{scroll-behavior:auto!important;animation:none!important}
 }
+
+.arena-jump-latest .arena-jump-count{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-width:19px!important;height:19px!important;padding:0 5px!important;border-radius:999px!important;background:#101827!important;color:#c7f36b!important;font-size:9px!important;font-weight:900!important;white-space:nowrap!important}
+.arena-jump-latest span{display:inline!important;font-size:10px!important;font-weight:900!important}
