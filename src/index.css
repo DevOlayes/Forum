@@ -1743,3 +1743,25 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .featured-topic-stats{align-items:center!important}
 @media(max-width:520px){.composer-modal-premium{padding:16px!important;border-radius:18px!important}.composer-image-hint{flex-basis:100%!important}.composer-image-preview>img{width:58px!important;height:52px!important;flex-basis:58px!important}}
 @media(prefers-reduced-motion:reduce){.composer-add-photo{transition:none!important}}
+
+
+/* Matchday Arena: make the community-rules CTA a properly padded, content-sized button. */
+.arena-room-rules button{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  width:fit-content!important;
+  max-width:100%!important;
+  min-height:38px!important;
+  padding:9px 12px!important;
+  border-radius:10px!important;
+  line-height:1.35!important;
+  white-space:normal!important;
+  text-align:left!important;
+  box-sizing:border-box!important;
+}
+.arena-room-rules button svg{flex:0 0 auto!important}
+@media(max-width:600px){
+  .arena-room-rules button{max-width:100%!important}
+}
