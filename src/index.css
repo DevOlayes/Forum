@@ -643,3 +643,78 @@ body{background:#f6f5f0!important;color:#101827}
   .discussion-layout .comment-main>p{font-size:13px!important}
   .discussion-layout .discussion-page-reply{bottom:5px!important}
 }
+
+
+/* Football Forum visual direction: deep navy canvas, slate surfaces, lime actions */
+:root{
+ --ff-bg:#101827;
+ --ff-panel:#202c40;
+ --ff-panel-raised:#26354b;
+ --ff-border:#35445a;
+ --ff-lime:#c7f36b;
+ --ff-text:#f6f5f0;
+ --ff-muted:#a5b0c0;
+}
+html,body,#root{background:#101827!important;color:#f6f5f0!important}
+body{background:radial-gradient(ellipse at 50% -20%,#24334a 0%,#101827 58%)!important;color:#f6f5f0!important}
+.app-shell,.page-layout,.feed-column,.home-page,.inner-page{background:transparent!important;color:#f6f5f0!important}
+.topbar,.topbar-inner,.topbar nav{background:#101827!important;border-color:#35445a!important}
+.topbar{box-shadow:0 1px 0 rgba(255,255,255,.07)!important}
+.brand-mark,.topbar button,.topbar .icon-button{color:#f6f5f0!important}
+.search-box,.search-box input{background:#202c40!important;border-color:#35445a!important;color:#f6f5f0!important}
+.search-box input::placeholder{color:#9eacbf!important}
+.left-sidebar,.right-sidebar,.sidebar-card,.panel,.post-card,.featured-topic-list,.game-arena-compact,.club-circles-section,.create-discussion-page,.detail-post,.discussion-page,.arena-room-card,.arena-chat-panel,.prediction-card,.profile-card,.settings-card{
+ background:#202c40!important;border-color:#35445a!important;color:#f6f5f0!important
+}
+.post-card,.featured-topic-list,.create-discussion-page,.detail-post,.arena-room-card,.prediction-card{box-shadow:0 8px 26px rgba(0,0,0,.12)!important}
+.post-author strong,.post-title-button,.featured-topic-title,.feed-heading h2,.club-circles-heading h2,.page-heading h1,.detail-post-content h1,.comments-heading h2,.comment-author strong,.clubhouse-hero h1,.section-title,.subheading-row h2{color:#f6f5f0!important}
+.post-meta,.post-handle,.post-content p,.featured-topic-main p,.featured-topic-meta,.featured-topic-stats,.detail-post-author>div>span,.detail-post-content p,.comment-main>p,.comments-heading>div:first-child>span,.page-heading p,.section-description,.muted,.composer-note{color:#aab6c7!important}
+.featured-topic-list{border-radius:13px!important;overflow:hidden!important}
+.featured-topic-row{grid-template-columns:38px minmax(0,1fr) 20px!important;gap:11px!important;padding:15px 13px!important;border-color:#35445a!important;align-items:start!important}
+.featured-topic-index{display:none!important}
+.featured-topic-main{min-width:0!important}
+.featured-topic-title{padding:4px 0!important;color:#f6f5f0!important;font-size:15px!important}
+.featured-topic-title:hover{color:#c7f36b!important}
+.featured-topic-main p{font-size:12px!important;line-height:1.6!important}
+.featured-topic-stats{gap:11px!important}
+.featured-topic-open{color:#aab6c7!important}
+.post-footer,.post-actions,.detail-post-actions,.comment-item,.comments-heading{border-color:#35445a!important}
+.post-actions button,.detail-post-actions button,.detail-post-actions>span,.comment-actions button{color:#aab6c7!important}
+.post-actions .action-liked,.detail-post-actions .action-liked{color:#c7f36b!important}
+.topic-tabs button,.sort-button,.club-circles-explore,.text-link,.comment-sort{color:#d3dbe6!important}
+.topic-tabs button{background:transparent!important}
+.topic-tabs button.topic-active{background:#2a3a4d!important;color:#c7f36b!important;border-color:#c7f36b!important}
+.quick-compose,.discussion-page-reply,.reply-compose,.arena-chat-composer{background:#202c40!important;border-color:#35445a!important;color:#f6f5f0!important}
+.quick-compose>span:not(.compose-plus),.discussion-page-reply input,.reply-compose input,.arena-chat-composer input{color:#f6f5f0!important}
+.quick-compose>span:not(.compose-plus){color:#c5cfdd!important}
+.quick-compose .compose-plus,.discussion-page-reply button,.reply-compose button,.arena-chat-composer button,.create-button,.join-debate,.game-arena-join,.game-arena-join-small{background:#c7f36b!important;color:#101827!important}
+.game-arena-banner{background:linear-gradient(110deg,#101827,#24364c)!important}
+.game-arena-fixture{background:#202c40!important;border-color:#35445a!important;color:#f6f5f0!important}
+.fixture-teams,.mini-team{color:#f6f5f0!important}
+.club-circle-crest{background:#fff!important}
+.avatar{flex:0 0 auto!important;overflow:hidden!important;display:grid!important;place-items:center!important;border-radius:50%!important}
+.avatar-photo{background:#fff!important;border:1px solid rgba(255,255,255,.22)!important}
+.avatar-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;border-radius:50%!important}
+.avatar-normal{width:42px!important;height:42px!important;font-size:12px!important}
+.avatar-small{width:34px!important;height:34px!important;font-size:10px!important}
+.featured-topic-row>.avatar{width:38px!important;height:38px!important}
+.post-top>.avatar,.detail-post-author>.avatar{width:42px!important;height:42px!important}
+.comment-item>.avatar,.nested-comment>.avatar{width:34px!important;height:34px!important}
+.detail-post{border:0!important;border-bottom:1px solid #35445a!important;border-radius:0!important;box-shadow:none!important}
+.detail-post-content h1{color:#f6f5f0!important}
+.detail-post-actions{background:transparent!important}
+.comments-heading{border-bottom:1px solid #35445a!important}
+.comment-item{border-bottom:1px solid #35445a!important}
+.nested-comment{border-color:#40516a!important}
+.comment-sort{background:#172235!important}
+.comment-sort button.sort-active{background:#c7f36b!important;color:#101827!important}
+.discussion-page-reply{box-shadow:0 8px 28px rgba(0,0,0,.28)!important}
+input,textarea,select,.form-control{background:#172235!important;border-color:#40516a!important;color:#f6f5f0!important}
+input::placeholder,textarea::placeholder{color:#8797ad!important}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline-color:#c7f36b!important}
+@media(max-width:700px){
+ .featured-topic-row{grid-template-columns:34px minmax(0,1fr) 18px!important;gap:9px!important;padding:13px 10px!important}
+ .featured-topic-row>.avatar{width:34px!important;height:34px!important}
+ .post-top>.avatar,.detail-post-author>.avatar{width:38px!important;height:38px!important}
+ .comment-item>.avatar,.nested-comment>.avatar{width:30px!important;height:30px!important}
+}
