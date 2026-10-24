@@ -910,3 +910,95 @@ button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px soli
  .left-sidebar,.left-sidebar.sidebar-open,.sidebar-open,.mobile-sidebar,.drawer,.nav-drawer,.sidebar-overlay-panel{border-radius:0 18px 18px 0!important}
  .featured-topic-row>.avatar,.post-top>.avatar,.detail-post-author>.avatar{border-radius:50%!important}
 }
+
+
+/* Correct the page-level layout: full-width shells, independent scrolling and anchored composers */
+html,body,#root{min-height:100%;width:100%;background:#101827!important;color:#f6f8fb!important}
+body{overflow-x:hidden}
+.app-shell,.app-main,.main-content,.page-content,.content-area,.discussion-page,.arena-page{
+ width:100%!important;max-width:none!important;min-width:0!important;
+}
+.app-main,.main-content,.page-content,.content-area{box-sizing:border-box!important}
+.discussion-page{padding-bottom:0!important}
+.discussion-page .detail-post,.discussion-page .discussion-replies{
+ width:100%!important;max-width:none!important;box-sizing:border-box!important;
+ background:#202c40!important;color:#f6f8fb!important;border-color:#3b4b61!important;
+}
+.discussion-page .detail-post{border-radius:0!important;border-bottom:1px solid #3b4b61!important}
+.discussion-page .detail-post-author strong,.discussion-page .comment-author strong,
+.discussion-page .detail-post-content h1,.discussion-page .comments-heading h2{color:#f8fafc!important}
+.discussion-page .detail-post-content p,.discussion-page .comment-main p,
+.discussion-page .detail-post-author span,.discussion-page .comment-author span,
+.discussion-page .comments-heading span,.discussion-page .composer-note{color:#d5deea!important}
+.discussion-page .detail-post-content{padding-top:12px!important;padding-bottom:18px!important}
+.discussion-page .detail-post-content p{font-size:16px!important;line-height:1.65!important}
+.discussion-page .discussion-replies{position:relative!important;padding-bottom:0!important}
+.discussion-page .discussion-page-reply{
+ position:sticky!important;bottom:0!important;z-index:40!important;
+ display:flex!important;align-items:center!important;gap:10px!important;
+ width:100%!important;box-sizing:border-box!important;
+ margin:12px 0 0!important;padding:12px max(14px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))!important;
+ background:#172235!important;border:1px solid #3b4b61!important;border-radius:18px 18px 0 0!important;
+ box-shadow:0 -8px 24px rgba(0,0,0,.2)!important;
+}
+.discussion-page .discussion-page-reply input{
+ flex:1 1 auto!important;min-width:0!important;height:48px!important;
+ color:#f8fafc!important;background:#101827!important;border:1px solid #43536a!important;
+ border-radius:13px!important;padding:0 13px!important;box-shadow:none!important;
+}
+.discussion-page .discussion-page-reply input::placeholder{color:#b8c5d6!important;opacity:1!important}
+.discussion-page .discussion-page-reply button{
+ flex:0 0 46px!important;width:46px!important;height:46px!important;border-radius:13px!important;
+ background:#c7f36b!important;color:#101827!important;
+}
+.discussion-page .composer-note{display:none!important}
+.discussion-page .comment-item{display:flex!important;align-items:flex-start!important;gap:11px!important;padding:16px!important;border-bottom:1px solid #34445a!important}
+.discussion-page .comment-main{flex:1 1 auto!important;min-width:0!important}
+.discussion-page .nested-comment{margin:12px 0 0 4px!important;padding:12px 0 0 12px!important;border-left:2px solid #43536a!important}
+.arena-page{padding:0!important;margin:0!important;min-height:calc(100dvh - 90px)!important}
+.arena-room-hero{width:100%!important;box-sizing:border-box!important;margin:0 0 12px!important;border-radius:0 0 18px 18px!important}
+.arena-room-heading h1{font-size:clamp(24px,3vw,36px)!important}
+.arena-room-heading p{color:#d5deea!important}
+.arena-room-layout{display:grid!important;grid-template-columns:minmax(0,1fr) 290px!important;width:100%!important;max-width:none!important;align-items:stretch!important}
+.arena-chat-panel{width:100%!important;min-width:0!important;max-width:none!important;display:flex!important;flex-direction:column!important;overflow:hidden!important}
+.arena-chat-stream{overflow-y:auto!important;overscroll-behavior:contain!important;scrollbar-gutter:stable!important}
+.arena-chat-message-meta strong,.arena-chat-message-body p{color:#f6f8fb!important}
+.arena-chat-message-meta time,.arena-chat-club,.arena-chat-footnote{color:#c2ccda!important}
+.arena-chat-composer{position:sticky!important;bottom:0!important;margin-top:auto!important;z-index:30!important}
+.arena-chat-composer input{min-width:0!important;flex:1 1 auto!important;color:#f6f8fb!important;border:1px solid #43536a!important;background:#101827!important}
+.arena-chat-composer input::placeholder{color:#b8c5d6!important;opacity:1!important}
+.arena-chat-composer button:disabled{opacity:.55!important}
+.arena-chat-footnote{font-size:11px!important;line-height:1.4!important}
+.arena-room-sidebar{min-width:0!important}
+.left-sidebar,.mobile-sidebar,.sidebar-open,.drawer,.nav-drawer,.sidebar-overlay-panel{
+ background:#172235!important;color:#f6f8fb!important;border:1px solid #34445a!important;
+}
+.left-sidebar p,.mobile-sidebar p,.sidebar-open p,.drawer p,.nav-drawer p,
+.left-sidebar small,.mobile-sidebar small,.sidebar-open small,.drawer small,.nav-drawer small,
+.left-sidebar .muted,.mobile-sidebar .muted{color:#cbd5e1!important}
+.left-sidebar .level-card,.mobile-sidebar .level-card,.sidebar-open .level-card,.drawer .level-card{
+ background:#202c40!important;border:1px solid #3b4b61!important;border-radius:16px!important;
+}
+.left-sidebar .level-card *,.mobile-sidebar .level-card *,.sidebar-open .level-card *,.drawer .level-card *{text-shadow:none!important}
+@media(max-width:700px){
+ .app-main,.main-content,.page-content,.content-area{padding-left:0!important;padding-right:0!important}
+ .discussion-page{padding-left:0!important;padding-right:0!important}
+ .discussion-page .detail-post{padding:16px!important}
+ .discussion-page .comments-heading{padding:16px!important;gap:10px!important;flex-wrap:wrap!important}
+ .discussion-page .discussion-page-reply{position:fixed!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;margin:0!important;border-radius:18px 18px 0 0!important}
+ .discussion-page .discussion-replies{padding-bottom:86px!important}
+ .arena-room-hero{padding:14px!important;margin:0 0 10px!important;border-radius:0 0 16px 16px!important}
+ .arena-room-heading{display:flex!important;flex-direction:column!important;gap:10px!important}
+ .arena-room-heading h1{font-size:24px!important;line-height:1.08!important}
+ .arena-room-heading p{display:none!important}
+ .arena-room-bottom{display:none!important}
+ .arena-room-versus{padding:9px!important}
+ .arena-room-layout{display:flex!important;flex-direction:column!important;gap:0!important}
+ .arena-chat-panel{height:calc(100dvh - 255px)!important;min-height:390px!important;max-height:none!important;border-radius:0!important;border-left:0!important;border-right:0!important}
+ .arena-chat-header{flex:0 0 auto!important}
+ .arena-chat-stream{flex:1 1 auto!important;min-height:0!important}
+ .arena-chat-composer{position:sticky!important;bottom:0!important;padding:10px!important;background:#172235!important}
+ .arena-chat-footnote{padding:6px 10px!important;background:#172235!important}
+ .arena-room-sidebar{display:none!important}
+ .arena-after-whistle{margin:12px!important}
+}
