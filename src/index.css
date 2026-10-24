@@ -1809,3 +1809,25 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .arena-room-layout{align-items:start!important}.arena-chat-panel{min-height:0!important;overflow:visible!important}.arena-chat-panel .arena-chat-stream{height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;overscroll-behavior:auto!important;scroll-behavior:auto!important;scrollbar-gutter:auto!important;padding-bottom:12px!important}.arena-jump-latest{position:fixed!important;right:max(22px,calc((100vw - 1120px)/2 + 22px))!important;bottom:96px!important}
 @media(max-width:700px){.arena-picker-masthead{min-height:0;padding:19px 17px;border-radius:15px}.arena-picker-total{flex-basis:72px;min-height:72px}.arena-picker-total strong{font-size:34px}.arena-picker-total span{font-size:7px;letter-spacing:1px}.arena-picker-mast-copy .arena-room-eyebrow{margin-top:13px}.arena-picker-mast-copy h1{font-size:25px;letter-spacing:-.8px}.arena-picker-mast-copy p{font-size:11px}.arena-match-picker-grid{grid-template-columns:minmax(0,1fr)!important;gap:9px!important}.arena-match-choice-compact{padding:12px 13px 11px!important;gap:9px!important}.arena-choice-team img{width:31px!important;height:31px!important}.arena-picker-toolbar h2{font-size:17px}.arena-picker-footer{align-items:flex-start}.arena-picker-footer p{font-size:9px}.arena-picker-footline{display:none}.arena-jump-latest{right:14px!important;bottom:86px!important}}
 @media(prefers-reduced-motion:reduce){.arena-match-choice-compact{transition:none!important}}
+
+
+/* Match centre: honest data state until a verified fixture provider is connected. */
+.arena-scoreboard{margin:14px 0 0;padding:13px 16px 11px;border:1px solid #2d3b50;border-radius:16px;background:radial-gradient(ellipse at 50% -30%,#314660 0%,transparent 65%),linear-gradient(125deg,#101827,#202c40);color:#f6f5f0;box-shadow:0 12px 28px #10182712}
+.arena-scoreboard-top,.arena-scoreboard-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.arena-scoreboard-label{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:900;letter-spacing:1.4px;color:#c7f36b}
+.arena-scoreboard-unavailable{display:flex;align-items:center;gap:6px;font-size:8px;font-weight:800;letter-spacing:.65px;color:#b9c4d2}
+.arena-scoreboard-unavailable i{width:6px;height:6px;border-radius:50%;background:#f2bd61;box-shadow:0 0 0 3px #f2bd611c}
+.arena-scoreboard-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,.65fr) minmax(0,1fr);align-items:center;gap:10px;padding:15px 0 12px}
+.arena-scoreboard-team{display:flex;align-items:center;justify-content:center;gap:9px;min-width:0}
+.arena-scoreboard-team img{width:35px;height:35px;object-fit:contain;flex-shrink:0}
+.arena-scoreboard-team strong{font-size:12px;line-height:1.3;overflow-wrap:anywhere}
+.arena-scoreboard-score{display:grid;justify-items:center;gap:4px;text-align:center}
+.arena-scoreboard-score>strong{font-family:Manrope,sans-serif;font-size:27px;line-height:1;font-weight:900;letter-spacing:-1px;color:#fff}
+.arena-scoreboard-score>strong span{color:#c7f36b;padding:0 3px}
+.arena-scoreboard-score>span{font-size:8px;color:#c2cbd7}
+.arena-scoreboard-score>small{font-size:8px;color:#c7f36b;font-weight:800;letter-spacing:.4px}
+.arena-scoreboard-footer{border-top:1px solid #ffffff18;padding-top:9px;font-size:8px;color:#aeb9c8}
+.arena-scoreboard-footer span{display:flex;align-items:center;gap:5px}
+.arena-load-older{display:block;margin:10px auto 14px;padding:8px 12px;border:1px solid #dfe5d4;border-radius:999px;background:#f6f8ef;color:#536b2b;font-size:10px;font-weight:800;cursor:pointer;transition:background .18s ease,transform .18s ease}
+.arena-load-older:hover{background:#eaf3d6;transform:translateY(-1px)}
+@media(max-width:600px){.arena-scoreboard{margin-top:10px;padding:11px 11px 9px;border-radius:13px}.arena-scoreboard-main{gap:5px;padding:13px 0 10px}.arena-scoreboard-team{flex-direction:column;gap:5px;text-align:center}.arena-scoreboard-team img{width:30px;height:30px}.arena-scoreboard-team strong{font-size:10px}.arena-scoreboard-score>strong{font-size:24px}.arena-scoreboard-unavailable{font-size:7px}.arena-scoreboard-footer{font-size:7px}}
