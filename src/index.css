@@ -1133,3 +1133,27 @@ body{overflow-x:hidden}
  .arena-chat-composer input{height:44px!important;font-size:14px!important}
  .arena-chat-composer button{width:43px!important;height:43px!important;min-width:43px!important}
 }
+
+
+/* Consistency pass requested: legible dark surfaces, round identity, compact gradient Arena tile */
+:root{--ff-bg:#101827;--ff-surface:#202c40;--ff-lime:#c7f36b;--ff-text:#f6f8fb;--ff-muted:#c2ccda}
+body,#root{background:#101827!important;color:#f6f8fb!important}
+h1,h2,h3,h4,strong,.post-title,.featured-topic-title,.detail-post-title{color:#f8fafc}
+p,.post-excerpt,.featured-topic-preview,.post-meta,.detail-post-meta,.topic-meta,.muted-text{color:#d5deea}
+.avatar,.avatar img,.avatar-photo,.avatar-photo img,.detail-post-author img,.comment-author img{border-radius:50%!important;aspect-ratio:1/1!important;object-fit:cover!important;overflow:hidden!important}
+.game-arena-banner,.game-arena-strip,.game-arena-card{background:linear-gradient(125deg,#172235 0%,#202c40 58%,#31465a 100%)!important;border:1px solid #3b4b61!important;border-radius:18px!important;box-shadow:0 10px 30px rgba(0,0,0,.18)!important}
+.game-arena-banner button,.game-arena-strip button,.game-arena-card button{border-radius:999px!important;padding:10px 15px!important;background:#c7f36b!important;color:#101827!important;font-weight:750!important}
+.game-arena-fixture{background:rgba(16,24,39,.45)!important;border:1px solid #43536a!important;border-radius:14px!important}
+.game-arena-carousel,.arena-carousel-track{scroll-snap-type:x mandatory!important;scroll-behavior:smooth!important}
+.game-arena-fixture{scroll-snap-align:start!important}
+button,a,[role=button]{transition:background-color .18s ease,border-color .18s ease,transform .18s ease,opacity .18s ease}
+button:not(:disabled):active,[role=button]:active{transform:scale(.98)}
+@keyframes ff-slide-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.post-card,.featured-topic-row,.prediction-card,.clubhouse-card{animation:ff-slide-in .24s ease both}
+.prediction-page,.prediction-grid,.prediction-week-summary{color:#f6f8fb!important}
+.prediction-notice,.prediction-card,.prediction-week-summary>div{background:#202c40!important;color:#f6f8fb!important;border:1px solid #3b4b61!important;border-radius:16px!important}
+.prediction-notice p,.prediction-card p,.prediction-week-summary span{color:#d5deea!important}
+.left-sidebar,.mobile-sidebar,.sidebar-open,.drawer,.nav-drawer{background:#172235!important;color:#f6f8fb!important}
+.left-sidebar *,.mobile-sidebar *,.sidebar-open *,.drawer *,.nav-drawer *{text-shadow:none!important}
+.left-sidebar p,.mobile-sidebar p,.sidebar-open p,.drawer p,.nav-drawer p,.left-sidebar small,.mobile-sidebar small,.drawer small{color:#d5deea!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
