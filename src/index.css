@@ -1002,3 +1002,81 @@ body{overflow-x:hidden}
  .arena-room-sidebar{display:none!important}
  .arena-after-whistle{margin:12px!important}
 }
+
+
+/* Matchday Arena: one continuous full-page room, compact match header and pinned composer */
+.arena-room-hero{
+ padding:14px 18px!important;margin:0!important;border-radius:0!important;
+ background:linear-gradient(110deg,#172235,#202c40)!important;border:0!important;
+ border-bottom:1px solid #3b4b61!important;
+}
+.arena-room-noise{opacity:.12!important}
+.arena-room-top{display:flex!important;align-items:center!important;gap:12px!important;flex-wrap:wrap!important;margin:0 0 10px!important}
+.arena-room-brand{font-size:12px!important;letter-spacing:.12em!important}
+.arena-room-brand-icon{width:30px!important;height:30px!important}
+.arena-room-status{font-size:10px!important;padding:6px 9px!important}
+.arena-room-online{display:inline-flex!important;align-items:center!important;gap:6px!important;margin-left:auto!important;color:#f6f8fb!important;font-size:12px!important;font-weight:700!important;background:#26354b!important;border:1px solid #43536a!important;border-radius:999px!important;padding:7px 10px!important}
+.arena-room-heading{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr)!important;gap:16px!important;align-items:center!important}
+.arena-room-eyebrow{font-size:10px!important;letter-spacing:.14em!important}
+.arena-room-heading h1{font-size:clamp(21px,2.5vw,30px)!important;line-height:1.06!important;letter-spacing:-.035em!important;margin:5px 0 0!important}
+.arena-room-heading h1 br{display:none!important}
+.arena-room-heading p{display:none!important}
+.arena-room-versus{padding:9px 12px!important;gap:9px!important;border-radius:14px!important;background:#101827!important;border:1px solid #43536a!important}
+.arena-room-crest{width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important}
+.arena-room-team small{display:none!important}
+.arena-room-bottom{display:none!important}
+.arena-room-layout{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+.arena-chat-panel{height:calc(100dvh - 155px)!important;min-height:460px!important;max-height:none!important;width:100%!important;max-width:none!important;border-radius:0!important;border-left:0!important;border-right:0!important;border-top:0!important;display:flex!important;flex-direction:column!important;background:#101827!important}
+.arena-chat-header{padding:11px 16px!important;flex:0 0 auto!important;background:#172235!important;border-bottom:1px solid #34445a!important}
+.arena-chat-header h2{font-size:15px!important;color:#f8fafc!important}
+.arena-chat-header p{font-size:11px!important;color:#c2ccda!important}
+.arena-chat-count{margin-left:auto!important}
+.arena-chat-matchbar,.arena-chat-notice{display:none!important}
+.arena-chat-stream{flex:1 1 auto!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;padding:12px 16px!important;display:flex!important;flex-direction:column!important;gap:15px!important}
+.arena-chat-message{display:flex!important;align-items:flex-start!important;gap:10px!important;width:100%!important;max-width:850px!important;margin:0 auto!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;animation:ff-fade-up .2s ease both}
+.arena-chat-message .avatar{width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;flex-basis:36px!important}
+.arena-chat-message-body{flex:1 1 auto!important;min-width:0!important}
+.arena-chat-message-meta{display:flex!important;align-items:center!important;gap:8px!important;flex-wrap:wrap!important;margin:1px 0 4px!important}
+.arena-chat-message-meta strong{font-size:13px!important;color:#f8fafc!important}
+.arena-chat-message-meta time{font-size:11px!important;color:#9eacc0!important;margin-left:auto!important}
+.arena-chat-message-body p{font-size:14px!important;line-height:1.5!important;color:#e7edf5!important;margin:0!important;overflow-wrap:anywhere!important}
+.arena-chat-message-body>button{margin-top:6px!important;padding:3px 8px!important;border-radius:999px!important;border:1px solid #3b4b61!important;background:#172235!important;color:#cbd5e1!important;font-size:11px!important}
+.arena-composer-dock{position:sticky!important;bottom:0!important;z-index:50!important;flex:0 0 auto!important;padding:8px max(14px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))!important;background:#172235!important;border-top:1px solid #34445a!important}
+.arena-sticker-tools{display:flex!important;align-items:center!important;gap:7px!important;max-width:850px!important;margin:0 auto 7px!important}
+.arena-sticker-tools button{width:31px!important;height:29px!important;border-radius:9px!important;border:1px solid #3b4b61!important;background:#202c40!important;color:#f8fafc!important;font-size:17px!important;display:grid!important;place-items:center!important}
+.arena-chat-composer{position:static!important;display:flex!important;align-items:center!important;gap:9px!important;max-width:850px!important;margin:0 auto!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.arena-chat-composer input{height:46px!important;min-width:0!important;flex:1 1 auto!important;border-radius:14px!important;background:#101827!important;color:#f8fafc!important;border:1px solid #43536a!important;padding:0 14px!important}
+.arena-chat-composer input::placeholder{color:#aebbd0!important;opacity:1!important}
+.arena-chat-composer button{height:44px!important;width:44px!important;min-width:44px!important;flex:0 0 44px!important;border-radius:13px!important;background:#c7f36b!important;color:#101827!important}
+.arena-chat-footnote{flex:0 0 auto!important;margin:0!important;padding:4px 16px 7px!important;text-align:center!important;font-size:10px!important;background:#172235!important;color:#b8c5d6!important}
+.arena-room-sidebar{display:none!important}
+.arena-after-whistle{display:none!important}
+@media(min-width:701px){
+ .arena-page{min-height:calc(100dvh - 80px)!important}
+ .arena-room-hero{padding:14px 24px!important}
+ .arena-chat-panel{height:calc(100dvh - 165px)!important}
+}
+@media(max-width:700px){
+ .arena-room-hero{padding:10px 12px!important}
+ .arena-room-top{gap:7px!important;margin-bottom:8px!important}
+ .arena-room-brand{font-size:10px!important}
+ .arena-room-brand-icon{width:26px!important;height:26px!important}
+ .arena-room-status{font-size:8px!important;padding:5px 7px!important}
+ .arena-room-online{font-size:10px!important;padding:5px 8px!important;margin-left:auto!important}
+ .arena-room-heading{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:8px!important}
+ .arena-room-heading h1{font-size:18px!important;line-height:1.1!important}
+ .arena-room-eyebrow{font-size:8px!important}
+ .arena-room-versus{padding:7px 6px!important;gap:5px!important}
+ .arena-room-crest{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important}
+ .arena-room-team strong{font-size:10px!important}
+ .arena-room-vs{font-size:12px!important}
+ .arena-chat-panel{height:calc(100dvh - 145px)!important;min-height:0!important}
+ .arena-chat-header{padding:9px 12px!important}
+ .arena-chat-stream{padding:12px!important;gap:14px!important}
+ .arena-chat-message .avatar{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;flex-basis:32px!important}
+ .arena-chat-message-body p{font-size:14px!important}
+ .arena-composer-dock{padding:7px 10px calc(7px + env(safe-area-inset-bottom))!important}
+ .arena-chat-composer .avatar{display:none!important}
+ .arena-chat-composer input{height:44px!important}
+ .arena-chat-footnote{font-size:9px!important;padding:3px 8px 5px!important}
+}
