@@ -1580,3 +1580,26 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .home-page .game-arena-fixture{margin:0!important;flex-shrink:0!important;border-radius:20px!important}
 @media(max-width:760px){.home-page .game-arena-fixture-grid{padding:12px 14px 15px!important;gap:12px!important}}
 @media(prefers-reduced-motion:reduce){.home-page .quick-compose-copy small::before{width:auto;max-width:100%;animation:none!important;border-right:0;content:"What’s on your football mind?"}}
+
+/* Screenshot-led mobile correction: true circular club crests and a real fixture gutter. */
+.home-page .club-circles-row{display:flex!important;align-items:flex-start!important;gap:16px!important;overflow-x:auto!important;overflow-y:hidden!important;padding:8px 4px 12px!important;scrollbar-width:none!important}
+.home-page .club-circles-row::-webkit-scrollbar{display:none!important}
+.home-page .club-circle-item{display:flex!important;flex:0 0 64px!important;width:64px!important;min-width:64px!important;max-width:64px!important;height:auto!important;min-height:0!important;align-items:center!important;justify-content:flex-start!important;flex-direction:column!important;padding:0!important;margin:0!important;border:0!important;background:transparent!important;box-sizing:border-box!important}
+.home-page .club-circle-crest{display:grid!important;place-items:center!important;flex:0 0 56px!important;width:56px!important;height:56px!important;min-width:56px!important;max-width:56px!important;min-height:56px!important;max-height:56px!important;aspect-ratio:1/1!important;border-radius:50%!important;overflow:hidden!important;box-sizing:border-box!important;padding:0!important;margin:0!important}
+.home-page .club-circle-crest img{display:block!important;position:static!important;flex:0 0 auto!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;padding:7px!important;box-sizing:border-box!important}
+.home-page .club-circle-crest .crest-fallback{position:absolute!important;inset:0!important;display:none;place-items:center!important}
+.home-page .game-arena-strip.game-arena-compact{overflow:hidden!important;padding:0!important}
+.home-page .game-arena-fixture-grid{display:flex!important;gap:14px!important;margin:0!important;padding:12px 16px 16px!important;width:100%!important;max-width:100%!important;box-sizing:border-box!important;overflow-x:auto!important;scroll-padding-inline:16px!important;scrollbar-width:none!important;scroll-behavior:smooth!important}
+.home-page .game-arena-fixture-grid::-webkit-scrollbar{display:none!important}
+.home-page .game-arena-fixture{flex:0 0 min(84%,340px)!important;width:min(84%,340px)!important;min-width:0!important;max-width:340px!important;margin:0!important;box-sizing:border-box!important}
+.home-page .quick-compose-copy{min-width:0!important;flex:1 1 auto!important}
+.home-page .quick-compose-copy small{display:block!important;min-width:0!important;max-width:100%!important;overflow:hidden!important;white-space:nowrap!important;color:transparent!important;font-size:0!important;line-height:1.55!important}
+.home-page .quick-compose-copy small::before{content:"What’s on your football mind?";display:inline-block;max-width:100%;width:0;overflow:hidden;white-space:nowrap;vertical-align:bottom;border-right:2px solid #c7f36b;padding-right:2px;color:#c8d2df;font-size:12px;line-height:1.55;animation:ff-composer-type 5.2s steps(30,end) infinite}
+@keyframes ff-composer-type{0%{width:0}40%{width:100%}63%{width:100%}100%{width:0}}
+@media(max-width:760px){
+ .home-page .club-circle-item{flex-basis:58px!important;width:58px!important;min-width:58px!important;max-width:58px!important}
+ .home-page .club-circle-crest{flex-basis:52px!important;width:52px!important;height:52px!important;min-width:52px!important;max-width:52px!important;min-height:52px!important;max-height:52px!important}
+ .home-page .game-arena-fixture-grid{padding:12px 14px 15px!important;gap:12px!important}
+ .home-page .game-arena-fixture{flex-basis:88%!important;width:88%!important}
+}
+@media(prefers-reduced-motion:reduce){.home-page .quick-compose-copy small::before{width:auto;max-width:100%;animation:none!important;border-right:0;content:"What’s on your football mind?"}.home-page .game-arena-fixture-grid{scroll-behavior:auto!important}}
