@@ -1337,3 +1337,113 @@ p,.page-heading p,.post-content p,.post-meta,.post-handle,.post-excerpt,
 button,a,[role=button]{transition:background-color .18s ease,border-color .18s ease,color .18s ease,transform .18s ease!important}
 button:not(:disabled):active,[role=button]:active{transform:scale(.985)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+/* Football Forum finishing pass — unified Arena, clear composer, restrained motion */
+.home-page .game-arena-strip.game-arena-compact{
+  position:relative!important;display:block!important;overflow:hidden!important;
+  padding:0!important;margin:0 0 22px!important;
+  border:1px solid #34445b!important;border-radius:20px!important;
+  background:radial-gradient(ellipse at 8% 0%,rgba(199,243,107,.075),transparent 42%),linear-gradient(145deg,#182438 0%,#121d2e 70%,#172338 100%)!important;
+  box-shadow:0 16px 38px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.035)!important;
+}
+.home-page .game-arena-strip.game-arena-compact:before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:26px 26px;mask-image:linear-gradient(90deg,#000,transparent 88%);
+}
+.home-page .game-arena-banner{
+  position:relative!important;z-index:1!important;display:flex!important;align-items:center!important;justify-content:space-between!important;
+  gap:16px!important;padding:18px 20px 15px!important;margin:0!important;
+  background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;
+}
+.home-page .game-arena-banner-copy{display:grid!important;gap:7px!important}
+.home-page .game-arena-banner-copy .arena-live-kicker{color:#c7f36b!important;letter-spacing:1.6px!important;font-size:10px!important}
+.home-page .game-arena-banner-copy>strong{font-size:21px!important;line-height:1.15!important;letter-spacing:-.6px!important;color:#fff!important}
+.home-page .game-arena-join{
+  min-height:44px!important;padding:12px 18px!important;gap:9px!important;border:1px solid rgba(199,243,107,.6)!important;
+  border-radius:12px!important;background:linear-gradient(135deg,#d5f78d,#c7f36b)!important;color:#142018!important;
+  box-shadow:0 5px 16px rgba(199,243,107,.14)!important;font-size:12px!important;font-weight:850!important;white-space:nowrap!important;
+  transition:transform .2s ease,box-shadow .2s ease,filter .2s ease!important;
+}
+.home-page .game-arena-join:hover{transform:translateY(-2px)!important;box-shadow:0 8px 22px rgba(199,243,107,.22)!important;filter:brightness(1.03)}
+.home-page .game-arena-fixture-grid{
+  position:relative!important;z-index:1!important;display:flex!important;gap:12px!important;
+  padding:0 18px 18px!important;margin:0!important;overflow-x:auto!important;overflow-y:hidden!important;
+  scroll-snap-type:x mandatory!important;scroll-behavior:smooth!important;overscroll-behavior-x:contain!important;
+  scrollbar-width:none!important;-webkit-overflow-scrolling:touch!important;
+}
+.home-page .game-arena-fixture-grid::-webkit-scrollbar{display:none!important}
+.home-page .game-arena-fixture{
+  flex:0 0 min(46%,330px)!important;min-width:245px!important;scroll-snap-align:start!important;
+  display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:12px!important;
+  padding:15px!important;border:1px solid #3b4a60!important;border-radius:15px!important;
+  background:linear-gradient(145deg,#2b3749,#222e40)!important;color:#fff!important;text-align:left!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035)!important;
+  transition:transform .22s ease,border-color .22s ease,background .22s ease,box-shadow .22s ease!important;
+}
+.home-page .game-arena-fixture:hover{transform:translateY(-3px)!important;border-color:#708451!important;background:linear-gradient(145deg,#303e51,#253247)!important;box-shadow:0 10px 24px rgba(0,0,0,.18)!important}
+.home-page .fixture-teams{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:9px!important;width:100%!important}
+.home-page .mini-team{display:flex!important;align-items:center!important;gap:7px!important;color:#fff!important;font-size:12px!important;font-weight:750!important;min-width:0!important}
+.home-page .mini-team img{width:30px!important;height:30px!important;object-fit:contain!important;padding:4px!important;border:1px solid #4b5a6d!important;border-radius:50%!important;background:#f7f8f4!important;flex-shrink:0!important}
+.home-page .fixture-teams>b{color:#c7f36b!important;font-size:10px!important;letter-spacing:1px!important}
+.home-page .fixture-countdown{color:#c2ccda!important;font-size:10px!important;letter-spacing:.3px!important}
+.home-page .game-arena-join-small{
+  display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;
+  min-height:40px!important;padding:10px 14px!important;border-radius:10px!important;
+  border:1px solid rgba(199,243,107,.35)!important;background:#c7f36b!important;color:#142018!important;
+  font-size:12px!important;font-weight:850!important;letter-spacing:.05px!important;
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease!important;
+}
+.home-page .game-arena-fixture:hover .game-arena-join-small{background:#d8fa9a!important;box-shadow:0 4px 14px rgba(199,243,107,.12)!important}
+.home-page .game-arena-fixture-grid:focus-visible{outline:2px solid #c7f36b!important;outline-offset:-3px!important;border-radius:12px!important}
+.home-page .club-circles-section,.home-page .featured-topic-list,.home-page .quick-compose{animation:ff-home-enter .42s ease both}
+.home-page .club-circles-section{animation-delay:.05s}
+.home-page .quick-compose{animation-delay:.09s}
+.home-page .featured-topic-row{animation:ff-home-enter .36s ease both}
+.home-page .featured-topic-row:nth-child(2){animation-delay:.04s}
+.home-page .featured-topic-row:nth-child(3){animation-delay:.08s}
+.home-page .featured-topic-row:nth-child(4){animation-delay:.12s}
+@keyframes ff-home-enter{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.home-page .club-circle-crest{transition:transform .22s ease,box-shadow .22s ease!important}
+.home-page .club-circle-item:hover .club-circle-crest{transform:translateY(-3px) scale(1.045)!important;box-shadow:0 8px 20px rgba(199,243,107,.12)!important}
+.home-page .quick-compose{
+  display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:12px!important;
+  width:100%!important;padding:15px 16px!important;margin:14px 0 16px!important;
+  border:1px solid #35445a!important;border-radius:16px!important;
+  background:linear-gradient(125deg,#1b293d,#172337)!important;color:#fff!important;text-align:left!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.1)!important;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease!important;
+}
+.home-page .quick-compose:hover{transform:translateY(-2px)!important;border-color:#60754a!important;box-shadow:0 12px 28px rgba(0,0,0,.17)!important}
+.home-page .quick-compose-copy{display:flex!important;flex:1 1 220px!important;flex-direction:column!important;gap:4px!important;min-width:0!important}
+.home-page .quick-compose-copy strong{font-size:13px!important;font-weight:800!important;color:#f8fafc!important}
+.home-page .quick-compose-copy small{font-size:11px!important;font-weight:450!important;color:#c2ccda!important;line-height:1.45!important}
+.home-page .quick-compose-tools{display:flex!important;align-items:center!important;gap:12px!important;margin-left:auto!important;color:#dce5ef!important;font-size:10px!important;font-weight:750!important}
+.home-page .quick-compose-tools>span{display:inline-flex!important;align-items:center!important;gap:5px!important}
+.home-page .quick-compose-tools svg{color:#c7f36b!important}
+.home-page .quick-compose-media-dot{color:#c7f36b!important;font-size:17px!important;line-height:1!important}
+.home-page .quick-compose .compose-plus{display:grid!important;place-items:center!important;width:34px!important;height:34px!important;border-radius:10px!important;background:#c7f36b!important;color:#142018!important}
+.home-page .quick-compose .compose-plus svg{color:#142018!important}
+.create-discussion-page,.discussion-page,.arena-room-sidecard,.prediction-round,.content-panel{animation:ff-home-enter .32s ease both}
+.create-discussion-page textarea,.create-discussion-page .form-control{color:#f8fafc!important;background:#172337!important;border-color:#3b4a60!important}
+.create-discussion-page textarea::placeholder{color:#aebbd0!important}
+.create-discussion-page textarea:focus,.create-discussion-page .form-control:focus{border-color:#a8cf59!important;box-shadow:0 0 0 3px rgba(199,243,107,.1)!important}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #c7f36b!important;outline-offset:3px!important}
+@media(max-width:700px){
+ .home-page .game-arena-strip.game-arena-compact{border-radius:16px!important;margin-bottom:17px!important}
+ .home-page .game-arena-banner{padding:15px 13px 13px!important;gap:10px!important}
+ .home-page .game-arena-banner-copy>strong{font-size:18px!important}
+ .home-page .game-arena-join{min-height:42px!important;padding:11px 13px!important;font-size:11px!important}
+ .home-page .game-arena-fixture-grid{gap:10px!important;padding:0 13px 14px!important}
+ .home-page .game-arena-fixture{flex-basis:82%!important;min-width:245px!important;padding:13px!important}
+ .home-page .mini-team{font-size:11px!important}
+ .home-page .mini-team img{width:27px!important;height:27px!important}
+ .home-page .game-arena-join-small{min-height:42px!important;font-size:12px!important}
+ .home-page .quick-compose{gap:10px!important;padding:13px!important}
+ .home-page .quick-compose-tools{width:100%!important;justify-content:flex-start!important;margin-left:46px!important;gap:16px!important}
+ .home-page .quick-compose-tools .compose-plus{margin-left:auto!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .home-page .club-circles-section,.home-page .featured-topic-list,.home-page .quick-compose,.home-page .featured-topic-row,.create-discussion-page,.discussion-page,.arena-room-sidecard,.prediction-round,.content-panel{animation:none!important}
+ .home-page .game-arena-join,.home-page .game-arena-fixture,.home-page .game-arena-join-small,.home-page .club-circle-crest,.home-page .quick-compose{transition:none!important}
+}
