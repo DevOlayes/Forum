@@ -1080,3 +1080,56 @@ body{overflow-x:hidden}
  .arena-chat-composer input{height:44px!important}
  .arena-chat-footnote{font-size:9px!important;padding:3px 8px 5px!important}
 }
+
+
+/* Final corrective override: viewport-fixed composer, plain full-width conversation */
+.arena-page,.arena-room-layout{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+.arena-room-hero{width:100%!important;max-width:none!important;margin:0!important;padding:10px 16px!important;border-radius:0!important;border-left:0!important;border-right:0!important;box-shadow:none!important}
+.arena-room-heading{grid-template-columns:minmax(0,1fr) minmax(250px,.7fr)!important;gap:12px!important}
+.arena-room-heading h1{font-size:24px!important;line-height:1.05!important}
+.arena-room-versus{background:transparent!important;border:0!important;box-shadow:none!important;padding:4px 8px!important}
+.arena-room-layout{display:block!important}
+.arena-chat-panel{position:relative!important;display:flex!important;flex-direction:column!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;padding-bottom:0!important;overflow:visible!important;border:0!important;border-radius:0!important;background:#101827!important;box-shadow:none!important}
+.arena-chat-header{background:#172235!important;padding:10px 16px!important;border-bottom:1px solid #34445a!important}
+.arena-chat-stream{display:flex!important;flex-direction:column!important;gap:0!important;width:100%!important;max-height:none!important;min-height:calc(100dvh - 300px)!important;overflow:visible!important;padding:4px 16px 170px!important}
+.arena-chat-message{width:100%!important;max-width:none!important;margin:0!important;padding:14px 0!important;border-bottom:1px solid #26354b!important;background:transparent!important;border-radius:0!important;box-shadow:none!important}
+.arena-chat-message:last-child{border-bottom:0!important}
+.arena-chat-message-body p{color:#f0f4fa!important}
+.arena-chat-message-meta strong{color:#fff!important}
+.arena-chat-message-meta time,.arena-chat-club{color:#bac7d8!important}
+.arena-composer-dock{position:fixed!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;box-sizing:border-box!important;z-index:999!important;flex:none!important;margin:0!important;padding:8px 14px calc(8px + env(safe-area-inset-bottom))!important;background:#172235!important;border-top:1px solid #43536a!important;border-radius:16px 16px 0 0!important;box-shadow:0 -8px 28px rgba(0,0,0,.3)!important}
+.arena-sticker-tools{margin:0 auto 7px!important}
+.arena-chat-composer{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;display:flex!important;gap:9px!important}
+.arena-chat-composer input{height:46px!important;border-radius:14px!important;background:#101827!important;border:1px solid #43536a!important;color:#fff!important}
+.arena-chat-composer button{height:44px!important;width:44px!important;min-width:44px!important;border-radius:13px!important}
+.arena-chat-footnote{display:none!important}
+.arena-room-sidebar,.arena-after-whistle{display:none!important}
+@media(min-width:701px){
+ .arena-chat-stream{padding:4px 28px 150px!important}
+ .arena-chat-message{max-width:1000px!important;align-self:center!important}
+ .arena-composer-dock{padding-left:max(24px,calc((100vw - 1000px)/2))!important;padding-right:max(24px,calc((100vw - 1000px)/2))!important}
+}
+@media(max-width:700px){
+ .arena-room-hero{padding:9px 12px!important}
+ .arena-room-top{margin-bottom:7px!important}
+ .arena-room-heading{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:4px!important}
+ .arena-room-heading h1{font-size:17px!important}
+ .arena-room-status{display:none!important}
+ .arena-room-online{font-size:10px!important}
+ .arena-room-versus{padding:0!important;gap:4px!important}
+ .arena-room-crest{width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important}
+ .arena-room-team strong{font-size:10px!important}
+ .arena-chat-stream{padding:0 13px 160px!important;min-height:calc(100dvh - 245px)!important}
+ .arena-chat-message{gap:9px!important;padding:13px 0!important}
+ .arena-chat-message .avatar{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;flex-basis:34px!important}
+ .arena-chat-message-meta{gap:6px!important}
+ .arena-chat-message-meta strong{font-size:13px!important}
+ .arena-chat-message-meta time{font-size:10px!important}
+ .arena-chat-message-body p{font-size:14px!important;line-height:1.5!important}
+ .arena-composer-dock{padding:7px 10px calc(7px + env(safe-area-inset-bottom))!important;border-radius:15px 15px 0 0!important}
+ .arena-sticker-tools{justify-content:flex-start!important}
+ .arena-sticker-tools button{width:29px!important;height:27px!important}
+ .arena-chat-composer .avatar{display:none!important}
+ .arena-chat-composer input{height:44px!important;font-size:14px!important}
+ .arena-chat-composer button{width:43px!important;height:43px!important;min-width:43px!important}
+}
