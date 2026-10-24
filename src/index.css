@@ -1831,3 +1831,106 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .arena-load-older{display:block;margin:10px auto 14px;padding:8px 12px;border:1px solid #dfe5d4;border-radius:999px;background:#f6f8ef;color:#536b2b;font-size:10px;font-weight:800;cursor:pointer;transition:background .18s ease,transform .18s ease}
 .arena-load-older:hover{background:#eaf3d6;transform:translateY(-1px)}
 @media(max-width:600px){.arena-scoreboard{margin-top:10px;padding:11px 11px 9px;border-radius:13px}.arena-scoreboard-main{gap:5px;padding:13px 0 10px}.arena-scoreboard-team{flex-direction:column;gap:5px;text-align:center}.arena-scoreboard-team img{width:30px;height:30px}.arena-scoreboard-team strong{font-size:10px}.arena-scoreboard-score>strong{font-size:24px}.arena-scoreboard-unavailable{font-size:7px}.arena-scoreboard-footer{font-size:7px}}
+
+
+/* Matchday Arena: pinned compact match card, with scrolling confined to the chat feed. */
+.arena-room-hero{
+  position:sticky!important;top:0!important;z-index:40!important;
+  margin:0 0 12px!important;padding:12px 16px 10px!important;
+  border-radius:0 0 16px 16px!important;
+  background:radial-gradient(ellipse at 80% 0%,rgba(199,243,107,.12),transparent 40%),linear-gradient(125deg,#172438,#101827 72%)!important;
+  box-shadow:0 10px 26px rgba(0,0,0,.22)!important;
+}
+.arena-room-noise{pointer-events:none!important}
+.arena-room-top{gap:8px!important;margin-bottom:0!important}
+.arena-room-heading{grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:16px!important;padding:10px 0!important}
+.arena-room-heading h1{font-size:clamp(22px,3vw,30px)!important;line-height:1.04!important;letter-spacing:-.8px!important;margin:5px 0!important}
+.arena-room-heading p{font-size:10px!important;line-height:1.4!important;margin:5px 0 0!important}
+.arena-room-versus{width:auto!important;max-width:320px!important;gap:10px!important;margin:0!important}
+.arena-room-team{gap:4px!important}
+.arena-room-crest{width:34px!important;height:34px!important}
+.arena-room-team strong{font-size:11px!important}
+.arena-room-team small{font-size:7px!important}
+.arena-room-vs{font-size:9px!important}
+.arena-inline-score{display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:8px 13px!important;padding:8px 0 1px!important;border-top:1px solid #ffffff18!important;color:#b8c5d5!important;font-size:9px!important}
+.arena-inline-scoreline{font-size:18px!important;line-height:1!important;font-weight:900!important;letter-spacing:-.5px!important;color:#fff!important}
+.arena-inline-scoreline b{color:#c7f36b!important;padding:0 2px!important}
+.arena-inline-clock,.arena-inline-status,.arena-inline-promise{display:inline-flex!important;align-items:center!important;gap:5px!important}
+.arena-inline-clock svg,.arena-inline-promise svg{color:#c7f36b!important}
+.arena-inline-status{font-size:8px!important;color:#d1d9e3!important}
+.arena-inline-status i{width:5px!important;height:5px!important;border-radius:50%!important;background:#f2bd61!important;display:inline-block!important}
+.arena-inline-promise{margin-left:auto!important;font-size:8px!important;color:#aebdce!important}
+.arena-inline-promise>span{color:#718096!important}
+.arena-room-layout{display:block!important;min-height:0!important}
+.arena-chat-panel{position:relative!important;display:flex!important;flex-direction:column!important;height:calc(100dvh - 290px)!important;min-height:260px!important;max-height:680px!important;overflow:hidden!important;border-radius:16px!important}
+.arena-chat-header{flex:0 0 auto!important}
+.arena-chat-panel .arena-chat-stream{
+  flex:1 1 auto!important;height:auto!important;min-height:0!important;max-height:none!important;
+  overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain!important;
+  scroll-behavior:smooth!important;scrollbar-gutter:stable!important;
+  padding:12px 14px 16px!important;
+}
+.arena-chat-panel .arena-chat-stream::-webkit-scrollbar{width:5px}
+.arena-chat-panel .arena-chat-stream::-webkit-scrollbar-thumb{background:#53647a;border-radius:99px}
+.arena-composer-dock{
+  position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;
+  flex:0 0 auto!important;width:100%!important;z-index:15!important;
+  padding:8px 12px!important;border-radius:0!important;
+  border-top:1px solid #34445a!important;background:#101827!important;
+  box-shadow:0 -8px 24px rgba(0,0,0,.15)!important;
+}
+.arena-chat-footnote{flex:0 0 auto!important;padding:7px 12px 9px!important;font-size:9px!important;background:#101827!important}
+.arena-jump-latest{
+  position:absolute!important;right:14px!important;bottom:104px!important;z-index:22!important;
+  min-height:42px!important;height:42px!important;min-width:unset!important;padding:0 15px!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;
+  border:1px solid #d9ff88!important;border-radius:999px!important;
+  background:linear-gradient(135deg,#d7ff85,#b9e957)!important;color:#101827!important;
+  box-shadow:0 7px 22px rgba(0,0,0,.38),0 0 0 4px rgba(199,243,107,.1)!important;
+  font-size:11px!important;font-weight:900!important;letter-spacing:.1px!important;
+}
+.arena-jump-latest svg{width:15px!important;height:15px!important;flex:0 0 auto!important;transform:rotate(90deg)!important}
+.arena-jump-latest span{font-size:11px!important;font-weight:900!important;color:#101827!important;white-space:nowrap!important}
+.arena-jump-latest span:empty{display:none!important}
+.arena-load-older{margin:2px auto 14px!important;border-color:#40516a!important;background:#202c40!important;color:#e6f4c4!important}
+.arena-load-older:hover{background:#293950!important;border-color:#c7f36b!important}
+.arena-room-sidebar{margin-top:14px!important}
+@media(max-width:700px){
+  .arena-room-hero{top:0!important;padding:9px 11px 8px!important;margin-bottom:9px!important;border-radius:0 0 13px 13px!important}
+  .arena-room-top{gap:6px!important}
+  .arena-back-to-matches{padding:6px 8px!important;font-size:9px!important}
+  .arena-room-brand{font-size:9px!important;letter-spacing:1px!important}
+  .arena-room-status{font-size:7px!important;padding:4px 6px!important}
+  .arena-room-online{display:none!important}
+  .arena-room-heading{grid-template-columns:minmax(0,1fr)!important;gap:7px!important;padding:7px 0 8px!important}
+  .arena-room-eyebrow{font-size:7px!important;letter-spacing:1.2px!important}
+  .arena-room-heading h1{font-size:21px!important;line-height:1.02!important;letter-spacing:-.6px!important;margin:4px 0!important}
+  .arena-room-heading p{display:none!important}
+  .arena-room-versus{width:100%!important;max-width:none!important;justify-content:flex-start!important;gap:12px!important}
+  .arena-room-team{flex-direction:row!important;justify-content:flex-start!important;gap:6px!important;flex:0 1 auto!important}
+  .arena-room-crest{width:27px!important;height:27px!important;flex:0 0 27px!important}
+  .arena-room-team strong{font-size:10px!important}
+  .arena-room-team small{display:none!important}
+  .arena-room-vs{margin:0 3px!important}
+  .arena-inline-score{gap:6px 10px!important;padding-top:7px!important}
+  .arena-inline-scoreline{font-size:16px!important}
+  .arena-inline-clock{font-size:8px!important}
+  .arena-inline-status{font-size:7px!important}
+  .arena-inline-promise{display:none!important}
+  .arena-chat-panel{height:calc(100dvh - 250px)!important;min-height:230px!important;max-height:none!important;border-radius:13px!important}
+  .arena-chat-panel .arena-chat-stream{padding:10px 9px 12px!important}
+  .arena-composer-dock{padding:7px 8px!important}
+  .arena-chat-footnote{padding:5px 8px 7px!important;font-size:8px!important}
+  .arena-jump-latest{right:10px!important;bottom:96px!important;min-height:39px!important;height:39px!important;padding:0 13px!important}
+  .arena-room-sidebar{margin-bottom:18px!important}
+}
+@media(max-width:380px){
+  .arena-room-brand{display:none!important}
+  .arena-room-heading h1{font-size:19px!important}
+  .arena-room-crest{width:24px!important;height:24px!important;flex-basis:24px!important}
+  .arena-room-team strong{font-size:9px!important}
+  .arena-chat-panel{height:calc(100dvh - 235px)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .arena-chat-panel .arena-chat-stream,.arena-jump-latest{scroll-behavior:auto!important;animation:none!important}
+}
