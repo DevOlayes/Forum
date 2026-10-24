@@ -1533,3 +1533,38 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .home-page .featured-topic-row>.avatar{width:30px!important;height:30px!important;min-width:30px!important}
  .home-page .quick-compose-tools{gap:8px!important;font-size:9px!important}
 }
+
+/* Football Forum refinement: protect natural proportions and restore premium spacing. */
+.home-page .club-circles-row{align-items:flex-start!important;gap:clamp(14px,2vw,22px)!important;padding:6px 4px 10px!important}
+.home-page .club-circle-item{flex:0 0 66px!important;width:66px!important;min-width:66px!important;max-width:66px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;box-sizing:border-box!important}
+.home-page .club-circle-crest{display:grid!important;place-items:center!important;position:relative!important;flex:0 0 56px!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;max-width:56px!important;max-height:56px!important;aspect-ratio:1/1!important;padding:0!important;margin:0 auto!important;border-radius:50%!important;box-sizing:border-box!important;overflow:hidden!important;line-height:1!important}
+.home-page .club-circle-crest img{display:block!important;position:static!important;flex:none!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;padding:7px!important;margin:0!important;box-sizing:border-box!important}
+.home-page .club-circle-item strong{display:block!important;max-width:100%!important;line-height:1.25!important;text-align:center!important;white-space:normal!important;overflow-wrap:anywhere!important}
+.home-page .game-arena-fixture-grid{padding:10px 18px 18px!important;gap:14px!important}
+.home-page .game-arena-fixture{margin:0!important;box-sizing:border-box!important;flex-shrink:0!important}
+@media(max-width:760px){
+ .home-page .club-circle-item{flex-basis:58px!important;width:58px!important;min-width:58px!important;max-width:58px!important}
+ .home-page .club-circle-crest{flex-basis:50px!important;width:50px!important;height:50px!important;min-width:50px!important;min-height:50px!important;max-width:50px!important;max-height:50px!important}
+ .home-page .game-arena-fixture-grid{padding:10px 14px 14px!important;gap:12px!important}
+}
+/* Polished quick-composer dialog. */
+.composer-backdrop{z-index:80!important;padding:18px!important;background:rgba(7,13,23,.78)!important;backdrop-filter:blur(8px)!important}
+.composer-modal-premium{width:min(100%,560px)!important;max-height:min(90vh,820px)!important;overflow-y:auto!important;padding:25px!important;border:1px solid #dce2e9!important;border-radius:22px!important;box-shadow:0 30px 90px rgba(0,0,0,.38)!important;animation:composer-rise .24s cubic-bezier(.2,.75,.25,1) both!important}
+.composer-modal-premium .modal-header{align-items:center!important;gap:16px!important}
+.composer-modal-premium .modal-header h2{font-size:clamp(22px,4vw,28px)!important;letter-spacing:-.8px!important;line-height:1.15!important;margin:6px 0 0!important}
+.composer-modal-close{display:grid!important;place-items:center!important;flex:0 0 38px!important;width:38px!important;height:38px!important;border:1px solid #e0e5eb!important;border-radius:50%!important;background:#f6f7f9!important;color:#263449!important}
+.composer-modal-premium .composer-user{margin:20px 0!important;padding:13px!important;border:1px solid #e5e9ef!important;border-radius:14px!important;background:#f7f9fb!important}
+.composer-modal-premium .composer-user strong{font-size:13px!important;color:#202c40!important}
+.composer-modal-premium .composer-user span{font-size:11px!important;color:#667085!important;line-height:1.5!important}
+.composer-modal-premium .field-label{display:block!important;margin:14px 0 7px!important;color:#344054!important;font-size:11px!important;font-weight:750!important;letter-spacing:.02em!important}
+.composer-modal-premium .form-control{min-height:44px!important;border:1px solid #d8dee7!important;border-radius:11px!important;background:#fff!important;color:#202c40!important;padding:10px 12px!important}
+.composer-modal-textarea{display:block!important;width:100%!important;min-height:150px!important;resize:vertical!important;box-sizing:border-box!important;border:1px solid #d8dee7!important;border-radius:14px!important;background:#fff!important;color:#202c40!important;padding:15px!important;font:inherit!important;font-size:14px!important;line-height:1.65!important;outline:none!important;transition:border-color .18s,box-shadow .18s!important}
+.composer-modal-textarea:focus{border-color:#9fcb39!important;box-shadow:0 0 0 4px rgba(199,243,107,.24)!important}
+.composer-modal-textarea::placeholder{color:#98a2b3!important}
+.composer-modal-footer{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;margin-top:13px!important;color:#667085!important;font-size:11px!important}
+.composer-modal-footer .create-button{min-height:42px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:9px!important;border-radius:11px!important;padding:0 16px!important}
+.composer-modal-footer .create-button:disabled{opacity:.45!important;cursor:not-allowed!important}
+.composer-modal-note{display:flex!important;align-items:center!important;gap:7px!important;margin:16px 0 0!important;color:#667085!important;font-size:11px!important;line-height:1.5!important}
+@keyframes composer-rise{from{opacity:0;transform:translateY(10px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:520px){.composer-modal-premium{padding:18px!important;border-radius:18px!important}.composer-modal-premium .composer-user{margin:15px 0!important}.composer-modal-textarea{min-height:125px!important}}
+@media(prefers-reduced-motion:reduce){.composer-modal-premium{animation:none!important}}
