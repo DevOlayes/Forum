@@ -1568,3 +1568,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @keyframes composer-rise{from{opacity:0;transform:translateY(10px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:520px){.composer-modal-premium{padding:18px!important;border-radius:18px!important}.composer-modal-premium .composer-user{margin:15px 0!important}.composer-modal-textarea{min-height:125px!important}}
 @media(prefers-reduced-motion:reduce){.composer-modal-premium{animation:none!important}}
+
+/* Animated invitation on the homepage composer; keeps the original premium card layout. */
+.home-page .quick-compose-copy{min-width:0!important}
+.home-page .quick-compose-copy small{display:block!important;min-width:0!important;max-width:100%!important;overflow:hidden!important;white-space:nowrap!important;color:#c8d2df!important;font-size:12px!important;line-height:1.55!important}
+.home-page .quick-compose-copy small::after{content:"|";display:inline-block;color:#c7f36b;margin-left:2px;animation:ff-caret-blink .85s steps(2,start) infinite}
+@keyframes ff-caret-blink{to{visibility:hidden}}
+/* Keep the fixture carousel inside the arena frame with a deliberate gutter. */
+.home-page .game-arena-fixture-grid{padding:12px 18px 17px!important;gap:14px!important;box-sizing:border-box!important}
+.home-page .game-arena-fixture{margin:0!important;flex-shrink:0!important;border-radius:20px!important}
+@media(max-width:760px){.home-page .game-arena-fixture-grid{padding:12px 14px 15px!important;gap:12px!important}}
+@media(prefers-reduced-motion:reduce){.home-page .quick-compose-copy small::after{animation:none!important}}
