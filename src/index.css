@@ -1603,3 +1603,46 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .home-page .game-arena-fixture{flex-basis:88%!important;width:88%!important}
 }
 @media(prefers-reduced-motion:reduce){.home-page .quick-compose-copy small::before{width:auto;max-width:100%;animation:none!important;border-right:0;content:"What’s on your football mind?"}.home-page .game-arena-fixture-grid{scroll-behavior:auto!important}}
+
+/* Homepage proportion pass: compact cards, naturally circular media, calm typewriter pace. */
+.home-page .club-circles-section{padding:22px 24px 20px!important;min-height:0!important}
+.home-page .club-circles-heading{margin-bottom:16px!important;gap:12px!important}
+.home-page .club-circles-row{gap:14px!important;padding:4px 2px 6px!important}
+.home-page .club-circle-item{flex:0 0 58px!important;width:58px!important;min-width:58px!important;max-width:58px!important}
+.home-page .club-circle-crest{flex:0 0 50px!important;width:50px!important;height:50px!important;min-width:50px!important;max-width:50px!important;min-height:50px!important;max-height:50px!important;aspect-ratio:1/1!important;border-radius:50%!important}
+.home-page .club-circle-crest img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:6px!important;border-radius:50%!important}
+.home-page .game-arena-strip.game-arena-compact{border-radius:22px!important}
+.home-page .game-arena-banner{padding:18px 20px!important;min-height:0!important}
+.home-page .game-arena-banner-copy strong{font-size:clamp(18px,2.4vw,22px)!important;line-height:1.2!important}
+.home-page .game-arena-join{min-height:48px!important;padding:0 18px!important;border-radius:14px!important}
+.home-page .game-arena-fixture-grid{gap:12px!important;padding:10px 16px 14px!important}
+.home-page .game-arena-fixture{flex:0 0 min(76%,310px)!important;width:min(76%,310px)!important;max-width:310px!important;padding:14px!important;border-radius:18px!important;gap:8px!important}
+.home-page .fixture-teams{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;align-items:center!important;gap:8px!important;width:100%!important}
+.home-page .fixture-teams .mini-team{display:flex!important;min-width:0!important;align-items:center!important;justify-content:flex-start!important;gap:7px!important;white-space:normal!important;overflow-wrap:anywhere!important;font-size:clamp(11px,1.5vw,13px)!important;line-height:1.2!important}
+.home-page .fixture-teams .mini-team:last-child{justify-content:flex-end!important;text-align:right!important}
+.home-page .fixture-teams .mini-team img{display:block!important;flex:0 0 34px!important;width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;max-width:34px!important;max-height:34px!important;aspect-ratio:1/1!important;object-fit:contain!important;object-position:center!important;border-radius:50%!important;background:#f6f5f0!important;padding:5px!important;box-sizing:border-box!important}
+.home-page .fixture-teams>b{flex:0 0 auto!important;font-size:11px!important}
+.home-page .fixture-countdown{margin-top:2px!important}
+.home-page .game-arena-join-small{min-height:42px!important;padding:10px 12px!important;border-radius:13px!important;justify-content:center!important}
+.home-page .featured-topic-row{align-items:flex-start!important;gap:12px!important;padding:16px!important}
+.home-page .featured-topic-row>.avatar{position:relative!important;display:flex!important;flex:0 0 48px!important;width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important;max-width:48px!important;max-height:48px!important;aspect-ratio:1/1!important;border-radius:50%!important;overflow:hidden!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important}
+.home-page .featured-topic-row>.avatar img{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-width:100%!important;min-height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center!important;border-radius:50%!important}
+.home-page .featured-topic-main{min-width:0!important;flex:1 1 auto!important}
+.home-page .quick-compose-copy small{font-size:0!important;color:transparent!important}
+.home-page .quick-compose-copy small::before{content:"What’s the football talk?";display:inline-block;max-width:100%;width:0;overflow:hidden;white-space:nowrap;vertical-align:bottom;border-right:2px solid #c7f36b;padding-right:2px;color:#c8d2df;font-size:12px;line-height:1.55;animation:ff-composer-type 10s steps(25,end) infinite}
+@keyframes ff-composer-type{0%,8%{width:0}36%{width:100%}68%{width:100%}92%,100%{width:0}}
+@media(max-width:760px){
+ .home-page .club-circles-section{padding:18px 18px 16px!important}
+ .home-page .club-circles-heading{margin-bottom:13px!important}
+ .home-page .club-circle-item{flex-basis:54px!important;width:54px!important;min-width:54px!important;max-width:54px!important}
+ .home-page .club-circle-crest{flex-basis:46px!important;width:46px!important;height:46px!important;min-width:46px!important;max-width:46px!important;min-height:46px!important;max-height:46px!important}
+ .home-page .game-arena-banner{padding:15px 16px!important}
+ .home-page .game-arena-fixture-grid{padding:9px 14px 13px!important;gap:11px!important}
+ .home-page .game-arena-fixture{flex-basis:82%!important;width:82%!important;padding:12px!important}
+ .home-page .fixture-teams{gap:5px!important}
+ .home-page .fixture-teams .mini-team{gap:5px!important;font-size:11px!important}
+ .home-page .fixture-teams .mini-team img{flex-basis:30px!important;width:30px!important;height:30px!important;min-width:30px!important;min-height:30px!important;max-width:30px!important;max-height:30px!important}
+ .home-page .featured-topic-row{gap:10px!important;padding:14px!important}
+ .home-page .featured-topic-row>.avatar{flex-basis:42px!important;width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;max-width:42px!important;max-height:42px!important}
+}
+@media(prefers-reduced-motion:reduce){.home-page .quick-compose-copy small::before{width:auto;max-width:100%;animation:none!important;border-right:0;content:"What’s the football talk?"}}
