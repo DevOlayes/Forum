@@ -1765,3 +1765,36 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(max-width:600px){
   .arena-room-rules button{max-width:100%!important}
 }
+
+
+/* Matchday Arena match picker and chat-follow behaviour */
+.arena-match-picker-heading{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:24px 2px 13px}
+.arena-match-picker-heading h2{margin:6px 0 0;font:800 22px/1.2 Manrope,sans-serif;letter-spacing:-.7px;color:#f6f5f0}
+.arena-match-picker-heading>span{font-size:11px;color:#b8c5d6}
+.arena-picker-stat{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;min-height:150px;padding:20px;border:1px solid #ffffff20;border-radius:18px;background:#ffffff0a;color:#c7f36b;text-align:center}
+.arena-picker-stat strong{color:#fff;font-size:16px}
+.arena-picker-stat span{color:#bdc9d7;font-size:10px}
+.arena-match-picker-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.arena-match-choice{display:flex;flex-direction:column;gap:18px;min-width:0;padding:18px;border:1px solid #34465e;border-radius:17px;background:linear-gradient(145deg,#1b2a40,#101827);color:#f6f5f0;text-align:left;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.arena-match-choice:hover,.arena-match-choice:focus-visible{transform:translateY(-2px);border-color:#c7f36b;box-shadow:0 12px 30px #0003;outline:none}
+.arena-choice-status{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:800;letter-spacing:1px;color:#c7f36b}
+.arena-choice-status i{width:6px;height:6px;border-radius:50%;background:#c7f36b;box-shadow:0 0 0 4px #c7f36b1b}
+.arena-choice-teams{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.arena-choice-team{display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;min-width:0;text-align:center}
+.arena-choice-team img{width:44px;height:44px;object-fit:contain}
+.arena-choice-team strong{font-size:13px;color:#fff}
+.arena-choice-team small{font-size:8px;letter-spacing:.7px;color:#aab8ca}
+.arena-choice-vs{font-size:12px;font-weight:900;font-style:italic;color:#c7f36b}
+.arena-choice-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:13px;border-top:1px solid #ffffff18}
+.arena-choice-footer>span:first-child{display:flex;align-items:center;gap:6px;color:#b9c7d8;font-size:10px}
+.arena-choice-enter{display:flex;align-items:center;gap:6px;color:#c7f36b;font-size:11px;font-weight:800}
+.arena-picker-note{display:flex;align-items:flex-start;gap:8px;margin:16px 2px;color:#b5c2d2;font-size:10px;line-height:1.6}
+.arena-picker-note svg{flex-shrink:0;color:#c7f36b}
+.arena-back-to-matches{display:inline-flex;align-items:center;gap:7px;border:1px solid #ffffff24;border-radius:9px;padding:8px 10px;background:#ffffff0b;color:#f6f5f0;font-size:10px;font-weight:800;cursor:pointer}
+.arena-chat-panel{position:relative}
+.arena-chat-panel .arena-chat-stream{min-height:260px;max-height:min(62vh,580px);overflow-y:auto!important;overscroll-behavior:contain;scroll-behavior:smooth;scrollbar-gutter:stable}
+.arena-jump-latest{position:absolute;right:22px;bottom:100px;z-index:25;display:flex;align-items:center;justify-content:center;gap:6px;min-width:42px;height:42px;padding:0 12px;border:1px solid #c7f36b;border-radius:999px;background:#c7f36b!important;color:#101827!important;box-shadow:0 8px 24px #0004;cursor:pointer;animation:arena-jump-in .18s ease-out}
+.arena-jump-latest span{font-size:10px;font-weight:900;color:#101827!important}
+@keyframes arena-jump-in{from{opacity:0;transform:translateY(7px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:700px){.arena-match-picker-grid{grid-template-columns:minmax(0,1fr)}.arena-match-choice{padding:16px}.arena-picker-hero .arena-room-heading{grid-template-columns:minmax(0,1fr)}.arena-picker-stat{min-height:0;padding:16px}.arena-chat-panel .arena-chat-stream{max-height:55vh;min-height:240px}.arena-jump-latest{right:14px;bottom:94px}}
+@media(prefers-reduced-motion:reduce){.arena-match-choice,.arena-jump-latest{animation:none;transition:none}}
