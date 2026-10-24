@@ -498,3 +498,60 @@ body{background:#f6f5f0!important;color:#101827}
  .create-discussion-page{padding:12px!important}
  .create-discussion-page .page-heading h1{font-size:26px!important}
 }
+
+
+/* Discussion detail follows a clear post-first, threaded-comments layout */
+.inner-page .discussion-page{max-width:780px!important;margin:0 auto!important;padding-bottom:24px!important}
+.detail-back{margin-bottom:10px!important}
+.detail-post{background:#fff!important;border:1px solid #e5e7eb!important;border-radius:14px!important;padding:18px 20px 0!important;box-shadow:0 3px 14px rgba(16,24,40,.035)!important}
+.detail-post-author{display:flex!important;align-items:center!important;gap:10px!important}
+.detail-post-author>div{display:grid!important;gap:4px!important;min-width:0!important;flex:1!important}
+.detail-post-author strong{font-size:13px!important;font-weight:800!important;color:#182438!important}
+.detail-post-author>div>span{font-size:11px!important;color:#89919e!important}
+.detail-post-content{padding:20px 0 18px!important}
+.detail-post-content h1{font-size:clamp(23px,3.4vw,31px)!important;line-height:1.24!important;letter-spacing:-.7px!important;color:#172235!important;margin:4px 0 12px!important}
+.detail-post-content p{font-size:15px!important;line-height:1.75!important;color:#424e60!important;margin:0!important;white-space:pre-wrap!important}
+.detail-post-actions{display:flex!important;align-items:center!important;gap:20px!important;min-height:48px!important;border-top:1px solid #edf0f2!important}
+.detail-post-actions button,.detail-post-actions>span{display:inline-flex!important;align-items:center!important;gap:6px!important;background:transparent!important;border:0!important;padding:8px 0!important;color:#697586!important;font-size:12px!important}
+.detail-post-actions button{cursor:pointer!important}
+.detail-post-actions .action-liked{color:#2563eb!important}
+.discussion-replies{margin-top:22px!important;display:grid!important;gap:0!important}
+.comments-heading{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;padding:0 2px 14px!important;border-bottom:1px solid #e9edf1!important;margin-bottom:2px!important}
+.comments-heading>div:first-child{display:grid!important;gap:4px!important}
+.comments-heading h2{font-size:21px!important;letter-spacing:-.4px!important;margin:0!important;color:#172235!important}
+.comments-heading>div:first-child>span{font-size:11px!important;color:#8b95a3!important}
+.comment-sort{display:flex!important;align-items:center!important;gap:4px!important;padding:4px!important;border-radius:999px!important;background:#f3f5f7!important}
+.comment-sort button{border:0!important;border-radius:999px!important;padding:7px 11px!important;background:transparent!important;color:#737e8d!important;font-size:11px!important;cursor:pointer!important}
+.comment-sort button.sort-active{background:#101827!important;color:#fff!important}
+.comment-item{display:flex!important;align-items:flex-start!important;gap:11px!important;padding:16px 2px!important;border-bottom:1px solid #eef0f2!important}
+.comment-main{min-width:0!important;flex:1!important}
+.comment-author{display:flex!important;align-items:center!important;gap:8px!important;min-width:0!important}
+.comment-author strong{font-size:12px!important;color:#263244!important;font-weight:800!important}
+.comment-author>span{font-size:10px!important;color:#9aa2ad!important}
+.comment-author>button{margin-left:auto!important;display:grid!important;place-items:center!important;width:26px!important;height:26px!important;border:0!important;border-radius:7px!important;background:transparent!important;color:#9aa2ad!important}
+.comment-main>p{font-size:13px!important;line-height:1.65!important;color:#4f5b6b!important;margin:7px 0 8px!important}
+.comment-actions{display:flex!important;align-items:center!important;gap:14px!important}
+.comment-actions button{display:inline-flex!important;align-items:center!important;gap:5px!important;border:0!important;background:transparent!important;padding:3px 0!important;color:#7b8795!important;font-size:11px!important;cursor:pointer!important}
+.nested-comment{display:flex!important;align-items:flex-start!important;gap:9px!important;margin:13px 0 0 2px!important;padding:12px 0 0 13px!important;border-left:2px solid #e6ebf0!important;border-top:1px solid #f0f2f4!important}
+.nested-comment .comment-main>p{font-size:12px!important}
+.discussion-page-reply{position:sticky!important;bottom:8px!important;z-index:5!important;display:flex!important;align-items:center!important;gap:9px!important;margin:14px 0 0!important;padding:10px!important;border:1px solid #dfe4e9!important;border-radius:14px!important;background:rgba(255,255,255,.98)!important;box-shadow:0 5px 22px rgba(16,24,40,.09)!important}
+.discussion-page-reply input{flex:1!important;min-width:0!important;border:0!important;outline:0!important;background:transparent!important;padding:10px 4px!important;color:#182438!important;font-size:13px!important}
+.discussion-page-reply button{display:grid!important;place-items:center!important;flex:none!important;width:38px!important;height:38px!important;border:0!important;border-radius:11px!important;background:#c7f36b!important;color:#172235!important}
+.discussion-page-reply button:disabled{opacity:.5!important}
+.discussion-replies>.composer-note{display:flex!important;align-items:center!important;gap:6px!important;color:#929baa!important;font-size:10px!important;margin:10px 2px!important}
+@media(max-width:700px){
+ .inner-page .discussion-page{padding-bottom:12px!important}
+ .detail-post{padding:14px 13px 0!important;border-radius:12px!important}
+ .detail-post-content{padding:16px 0 14px!important}
+ .detail-post-content h1{font-size:22px!important;line-height:1.28!important}
+ .detail-post-content p{font-size:13px!important;line-height:1.7!important}
+ .detail-post-actions{gap:15px!important;min-height:44px!important}
+ .detail-post-actions button,.detail-post-actions>span{font-size:11px!important}
+ .discussion-replies{margin-top:18px!important}
+ .comments-heading h2{font-size:19px!important}
+ .comment-sort button{padding:7px 9px!important;font-size:10px!important}
+ .comment-item{gap:8px!important;padding:13px 0!important}
+ .comment-main>p{font-size:12px!important;line-height:1.65!important}
+ .nested-comment{padding-left:10px!important;margin-top:10px!important}
+ .discussion-page-reply{bottom:5px!important}
+}
