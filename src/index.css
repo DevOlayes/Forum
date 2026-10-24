@@ -555,3 +555,91 @@ body{background:#f6f5f0!important;color:#101827}
  .nested-comment{padding-left:10px!important;margin-top:10px!important}
  .discussion-page-reply{bottom:5px!important}
 }
+
+
+/* Focus mode: discussion pages read like a social conversation, not the dashboard */
+.page-layout.discussion-layout{
+  grid-template-columns:minmax(0, 1fr)!important;
+  max-width:900px!important;
+  margin:0 auto!important;
+  padding:22px 24px 60px!important;
+  align-items:start!important;
+}
+.page-layout.discussion-layout>.left-sidebar,
+.page-layout.discussion-layout>.right-sidebar{display:none!important}
+.page-layout.discussion-layout>.feed-column{
+  width:100%!important;
+  max-width:760px!important;
+  min-width:0!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+.discussion-layout .detail-back{
+  display:inline-flex!important;
+  align-items:center!important;
+  gap:7px!important;
+  margin:0 0 14px!important;
+  padding:8px 0!important;
+  color:#667085!important;
+  font-size:12px!important;
+  font-weight:650!important;
+}
+.discussion-layout .discussion-page{
+  max-width:none!important;
+  width:100%!important;
+  margin:0!important;
+}
+.discussion-layout .detail-post{
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  border-bottom:1px solid #e9edf1!important;
+  padding:14px 4px 0!important;
+  background:transparent!important;
+}
+.discussion-layout .detail-post-author{gap:11px!important}
+.discussion-layout .detail-post-content{padding:18px 0 16px!important}
+.discussion-layout .detail-post-content h1{
+  font-size:clamp(25px,3.3vw,34px)!important;
+  letter-spacing:-.85px!important;
+  line-height:1.18!important;
+  margin:10px 0 13px!important;
+  font-weight:800!important;
+}
+.discussion-layout .detail-post-content p{
+  font-size:15px!important;
+  line-height:1.8!important;
+  color:#384455!important;
+}
+.discussion-layout .detail-post-actions{border-top:1px solid #edf0f2!important;justify-content:space-between!important}
+.discussion-layout .discussion-replies{margin-top:0!important}
+.discussion-layout .comments-heading{
+  padding:20px 4px 13px!important;
+  border-bottom:1px solid #e7ebef!important;
+}
+.discussion-layout .comment-item{padding:18px 4px!important}
+.discussion-layout .comment-main>p{font-size:14px!important;line-height:1.7!important}
+.discussion-layout .nested-comment{margin-top:14px!important;padding-top:13px!important}
+.discussion-layout .discussion-page-reply{
+  bottom:10px!important;
+  margin:16px 0 0!important;
+  box-shadow:0 6px 26px rgba(16,24,40,.10)!important;
+}
+@media(max-width:700px){
+  .page-layout.discussion-layout{
+    padding:12px 16px 32px!important;
+    display:block!important;
+  }
+  .page-layout.discussion-layout>.feed-column{padding:0!important}
+  .discussion-layout .detail-back{margin:0 0 8px!important;padding:6px 0!important}
+  .discussion-layout .detail-post{padding:10px 0 0!important}
+  .discussion-layout .detail-post-content{padding:16px 0 14px!important}
+  .discussion-layout .detail-post-content h1{font-size:25px!important;line-height:1.2!important}
+  .discussion-layout .detail-post-content p{font-size:14px!important;line-height:1.75!important}
+  .discussion-layout .detail-post-actions{gap:10px!important}
+  .discussion-layout .detail-post-actions button,.discussion-layout .detail-post-actions>span{font-size:11px!important}
+  .discussion-layout .comments-heading{padding:18px 0 12px!important}
+  .discussion-layout .comment-item{padding:15px 0!important}
+  .discussion-layout .comment-main>p{font-size:13px!important}
+  .discussion-layout .discussion-page-reply{bottom:5px!important}
+}
