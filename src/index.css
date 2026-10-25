@@ -2244,3 +2244,87 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(prefers-reduced-motion:reduce){
   .join-debate,.join-debate svg,.club-card .secondary-button{transition:none!important;transform:none!important}
 }
+
+
+/* Discover mobile alignment: perfectly circular crests and contained discussion cards */
+.club-crest,
+.club-crest.crest-large,
+.club-crest.crest-hero {
+  width:var(--crest-size, 48px)!important;
+  height:var(--crest-size, 48px)!important;
+  aspect-ratio:1 / 1!important;
+  flex:0 0 auto!important;
+  box-sizing:border-box!important;
+  border-radius:50%!important;
+  overflow:hidden!important;
+  display:inline-grid!important;
+  place-items:center!important;
+}
+.club-crest.crest-large { --crest-size: 48px; }
+.club-crest.crest-hero { --crest-size: 64px; }
+.club-crest img {
+  display:block!important;
+  width:76%!important;
+  height:76%!important;
+  max-width:76%!important;
+  max-height:76%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:0!important;
+  flex:none!important;
+}
+.club-crest .crest-fallback {
+  width:100%!important;
+  height:100%!important;
+  border-radius:50%!important;
+  place-items:center!important;
+}
+.post-card {
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+.post-top,.post-content,.post-footer,.post-actions {
+  min-width:0!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+}
+.post-footer {
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  flex-wrap:wrap!important;
+  gap:10px!important;
+}
+.post-actions {
+  display:flex!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  gap:clamp(8px,2vw,16px)!important;
+  flex:1 1 220px!important;
+}
+.join-debate {
+  flex:0 1 auto!important;
+  max-width:100%!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:700px) {
+  .club-crest.crest-large { --crest-size: 44px; }
+  .club-crest.crest-hero { --crest-size: 58px; }
+  .post-card { padding:12px!important; }
+  .post-footer { align-items:stretch!important; gap:10px!important; }
+  .post-actions { flex:1 1 100%!important; gap:clamp(8px,3vw,14px)!important; }
+  .post-actions button { min-width:0!important; }
+  .join-debate {
+    width:100%!important;
+    min-width:0!important;
+    min-height:40px!important;
+    padding:0 12px!important;
+    justify-content:center!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+  }
+  .join-debate span { min-width:0!important; }
+}
