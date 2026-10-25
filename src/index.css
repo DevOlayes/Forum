@@ -2403,3 +2403,97 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .discussion-page-reply input{height:44px!important;font-size:14px!important}
  .discussion-page-reply button{flex-basis:44px!important;width:44px!important;height:44px!important}
 }
+
+
+/* Repair discussion avatars: contain profile images inside their own circular frame */
+.discussion-page .avatar,
+.discussion-page .detail-post-author .avatar,
+.discussion-page .comment-item>.avatar,
+.discussion-page .nested-comment>.avatar{
+  position:relative!important;
+  isolation:isolate!important;
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 40px!important;
+  width:40px!important;height:40px!important;
+  min-width:40px!important;min-height:40px!important;
+  max-width:40px!important;max-height:40px!important;
+  aspect-ratio:1/1!important;
+  border-radius:50%!important;
+  overflow:hidden!important;
+}
+.discussion-page .avatar img,
+.discussion-page .avatar-photo img,
+.discussion-page .detail-post-author .avatar img,
+.discussion-page .comment-item>.avatar img,
+.discussion-page .nested-comment>.avatar img{
+  position:absolute!important;inset:0!important;
+  display:block!important;width:100%!important;height:100%!important;
+  min-width:100%!important;min-height:100%!important;max-width:100%!important;max-height:100%!important;
+  object-fit:cover!important;object-position:center!important;border-radius:50%!important;
+}
+.discussion-page .comment-item,.discussion-page .nested-comment{min-width:0!important}
+.discussion-page .comment-main{flex:1 1 0!important;width:0!important;overflow-wrap:anywhere!important}
+@media(max-width:700px){
+ .discussion-page .avatar,
+ .discussion-page .detail-post-author .avatar,
+ .discussion-page .comment-item>.avatar,
+ .discussion-page .nested-comment>.avatar{
+   flex-basis:36px!important;width:36px!important;height:36px!important;
+   min-width:36px!important;min-height:36px!important;max-width:36px!important;max-height:36px!important;
+ }
+}
+
+/* Start-discussion page: match the Football Forum premium dark system */
+.create-discussion-page{
+  position:relative!important;isolation:isolate!important;overflow:hidden!important;
+  padding:clamp(18px,3vw,30px)!important;
+  border:1px solid #34465e!important;border-radius:18px!important;
+  background:
+    radial-gradient(ellipse at 95% 0%,rgba(199,243,107,.09),transparent 36%),
+    linear-gradient(145deg,#202c40 0%,#172338 72%,#142033 100%)!important;
+  color:#f6f5f0!important;
+  box-shadow:0 16px 42px rgba(0,0,0,.16)!important;
+}
+.create-discussion-page:before{
+  content:""!important;position:absolute!important;inset:0!important;z-index:-1!important;pointer-events:none!important;
+  opacity:.14!important;
+  background-image:repeating-linear-gradient(135deg,transparent 0 28px,rgba(199,243,107,.2) 29px 30px,transparent 31px 58px)!important;
+  mask-image:linear-gradient(110deg,transparent 10%,#000 100%)!important;
+}
+.create-discussion-page .page-heading h1{color:#fff!important}
+.create-discussion-page .page-heading p{color:#b8c4d4!important}
+.create-discussion-page .field-label{color:#e8edf4!important}
+.create-discussion-page .form-control,
+.create-discussion-page textarea{
+  width:100%!important;min-width:0!important;box-sizing:border-box!important;
+  background:#142033!important;color:#f6f5f0!important;border:1px solid #40516a!important;
+  border-radius:12px!important;padding:13px 14px!important;
+}
+.create-discussion-page textarea{min-height:160px!important;line-height:1.6!important;resize:vertical!important}
+.create-discussion-page textarea::placeholder{color:#91a0b4!important}
+.create-discussion-page .composer-user{
+  background:rgba(16,24,39,.72)!important;border:1px solid #40516a!important;
+  border-radius:13px!important;padding:13px!important;
+}
+.create-discussion-page .composer-user strong{color:#f6f5f0!important}
+.create-discussion-page .composer-user span{color:#b8c4d4!important}
+.create-discussion-page .composer-bottom{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;flex-wrap:wrap!important}
+.create-discussion-page .composer-bottom>span{color:#9eacc0!important;font-size:12px!important}
+.create-discussion-page .composer-bottom .create-button{
+  background:#c7f36b!important;color:#172116!important;border-radius:11px!important;
+  min-height:44px!important;padding:0 17px!important;white-space:normal!important;
+}
+.create-discussion-page .composer-note{color:#b8c4d4!important;border-top:1px solid #40516a!important;padding-top:14px!important}
+.create-discussion-page .composer-note svg{color:#c7f36b!important}
+.create-discussion-page .page-heading .eyebrow{color:#c7f36b!important}
+.create-discussion-page .composer-image-preview{background:#142033!important;border-color:#40516a!important}
+.clubhouse-actions{justify-content:flex-start!important}
+.clubhouse-actions .create-button{position:relative!important;z-index:2!important;min-width:0!important;width:auto!important;max-width:100%!important}
+@media(max-width:700px){
+ .create-discussion-page{padding:16px!important;border-radius:15px!important}
+ .create-discussion-page .page-heading{padding:4px 0 18px!important}
+ .create-discussion-page .page-heading h1{font-size:clamp(25px,7vw,34px)!important}
+ .create-discussion-page textarea{min-height:140px!important}
+ .create-discussion-page .composer-bottom .create-button{max-width:100%!important}
+}
