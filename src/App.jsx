@@ -69,7 +69,6 @@ function App(){
   {predictionRounds.filter(round=>round.day===predictionDay).map(round=><section className="prediction-round" key={round.day}>
    <div className="prediction-round-heading"><div><span className="panel-eyebrow">{round.competition}</span><h2>{round.day} <span>· {round.dateLabel}</span></h2></div><span className="round-count">4 MATCHES</span></div>
    <div className="prediction-match-list">{round.matches.map((m,i)=><article className="prediction-match prediction-match-clean" key={m[0]+m[1]}>
-    <div className="prediction-match-index">{String(i+1).padStart(2,'0')}</div>
     <div className="prediction-teams"><div className="prediction-team"><img src={predictionLogo(m[0])} alt="" loading="lazy" onError={e=>{e.currentTarget.style.visibility='hidden'}}/><span>{m[0]}</span></div><span className="prediction-vs">VS</span><div className="prediction-team"><img src={predictionLogo(m[1])} alt="" loading="lazy" onError={e=>{e.currentTarget.style.visibility='hidden'}}/><span>{m[1]}</span></div></div>
     <div className="prediction-result"><span className="prediction-result-label"><Trophy size={12}/> PICK</span><strong>{m[2]}</strong></div>
     <div className="prediction-confidence-clean"><strong>{m[3]}</strong><span>confidence*</span><div><i style={{width:m[3]}}/></div></div>
