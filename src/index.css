@@ -2530,3 +2530,100 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .composer-modal-footer .create-button{min-width:132px!important;padding:0 12px!important}
  .composer-modal-footer .create-button span{font-size:12px!important}
 }
+
+
+/* Predictions: reliable visibility and the same premium matchday visual language */
+.predictions-page{
+ display:block!important;position:relative!important;isolation:isolate!important;
+ min-width:0!important;visibility:visible!important;opacity:1!important;
+ color:#f6f5f0!important;padding:4px 0 32px!important;
+}
+.predictions-page:before{
+ content:"";position:absolute;z-index:-1;pointer-events:none;top:0;right:-8%;width:70%;height:340px;opacity:.24;
+ background-image:linear-gradient(30deg,transparent 48%,rgba(199,243,107,.17) 49%,rgba(199,243,107,.17) 50%,transparent 51%),linear-gradient(150deg,transparent 48%,rgba(199,243,107,.17) 49%,rgba(199,243,107,.17) 50%,transparent 51%);
+ background-size:42px 42px;mask-image:linear-gradient(100deg,transparent,#000);
+}
+.predictions-page .page-heading h1{color:#f6f5f0!important;letter-spacing:-1.3px!important}
+.predictions-page .page-heading p{color:#aebbcf!important}
+.predictions-page .prediction-notice{
+ display:flex!important;align-items:flex-start!important;gap:12px!important;
+ background:linear-gradient(135deg,#172b28,#182538)!important;border:1px solid #40594b!important;
+ border-radius:14px!important;padding:14px 16px!important;color:#f6f5f0!important;
+}
+.predictions-page .prediction-notice>svg{flex:0 0 auto;color:#c7f36b!important}
+.predictions-page .prediction-notice strong{display:block;color:#f6f5f0!important;font-size:13px!important}
+.predictions-page .prediction-notice p{margin:5px 0 0!important;color:#b8c5d5!important;font-size:11px!important;line-height:1.6!important}
+.predictions-page .prediction-week-summary{
+ display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important;
+ background:linear-gradient(135deg,#202c40,#172338)!important;border:1px solid #3a4b62!important;
+ border-radius:14px!important;padding:15px 17px!important;
+}
+.predictions-page .prediction-week-summary .section-kicker{color:#c7f36b!important;font-size:9px!important;letter-spacing:1.1px!important}
+.predictions-page .prediction-week-summary>div:first-child>strong{color:#fff!important;font-size:16px!important}
+.predictions-page .prediction-week-summary>div:first-child>span:last-child{color:#aebbd0!important;font-size:10px!important;line-height:1.5!important}
+.predictions-page .prediction-summary-stat strong{color:#c7f36b!important}
+.predictions-page .prediction-summary-stat span{color:#aebbd0!important}
+.predictions-page .prediction-day-tabs{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:8px!important}
+.predictions-page .prediction-day-tabs button{
+ min-width:0!important;background:#172338!important;border:1px solid #34455d!important;border-radius:11px!important;
+ padding:11px 12px!important;color:#aebbd0!important;transition:background .18s,border-color .18s,transform .18s!important;
+}
+.predictions-page .prediction-day-tabs button strong{color:#f6f5f0!important;font-size:12px!important}
+.predictions-page .prediction-day-tabs button span,.predictions-page .prediction-day-tabs button small{color:#aebbd0!important}
+.predictions-page .prediction-day-tabs button.prediction-day-active{background:#2a3a4b!important;border-color:#c7f36b!important;box-shadow:inset 0 -2px #c7f36b!important}
+.predictions-page .prediction-round{display:block!important;min-width:0!important;margin-top:20px!important}
+.predictions-page .prediction-round-heading h2{color:#fff!important}
+.predictions-page .prediction-round-heading h2 span{color:#aebbd0!important}
+.predictions-page .round-count{background:#283744!important;color:#c7f36b!important;border:1px solid #40594b!important}
+.predictions-page .prediction-match-list{display:grid!important;gap:8px!important}
+.predictions-page .prediction-match{
+ display:grid!important;align-items:center!important;min-width:0!important;min-height:0!important;
+ background:linear-gradient(120deg,#202c40,#172338)!important;border:1px solid #35465d!important;
+ border-radius:12px!important;padding:12px 13px!important;gap:11px!important;
+ box-shadow:0 5px 18px rgba(0,0,0,.1)!important;transition:border-color .18s,transform .18s!important;
+}
+.predictions-page .prediction-match:hover{border-color:#60754b!important;transform:translateY(-1px)!important}
+.predictions-page .prediction-match-index{color:#c7f36b!important}
+.predictions-page .prediction-match-comp{color:#c7f36b!important;letter-spacing:.55px!important}
+.predictions-page .prediction-match-main>strong{color:#f6f5f0!important;font-size:12px!important}
+.predictions-page .prediction-match-main>small{color:#aebbd0!important}
+.predictions-page .prediction-pick{border-color:#3b4b61!important}
+.predictions-page .prediction-pick>span,.predictions-page .prediction-pick small{color:#aebbd0!important}
+.predictions-page .prediction-pick strong{color:#e2f7b4!important}
+.predictions-page .prediction-confidence strong{color:#f6f5f0!important}
+.predictions-page .prediction-confidence span{color:#aebbd0!important}
+.predictions-page .prediction-confidence>div{background:#354458!important}
+.predictions-page .prediction-confidence i{background:#c7f36b!important}
+.predictions-page .prediction-open{color:#c7f36b!important;border-radius:7px!important}
+.predictions-page .prediction-disclaimer{color:#9eacc0!important}
+.predictions-page .prediction-stats{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:9px!important}
+.predictions-page .prediction-stats>div{
+ min-width:0!important;background:#172338!important;border:1px solid #34455d!important;
+ border-radius:12px!important;padding:13px!important;
+}
+.predictions-page .prediction-stats span,.predictions-page .prediction-stats small{color:#aebbd0!important}
+.predictions-page .prediction-stats strong{color:#f6f5f0!important}
+.predictions-page .forecast-panel{
+ display:flex!important;align-items:flex-start!important;gap:14px!important;
+ background:linear-gradient(135deg,#202c40,#172338)!important;border:1px solid #35465d!important;
+ border-radius:14px!important;padding:17px!important;color:#f6f5f0!important;
+}
+.predictions-page .forecast-panel h2{color:#fff!important}
+.predictions-page .forecast-panel p{color:#b8c5d5!important}
+.predictions-page .forecast-panel .panel-eyebrow{color:#c7f36b!important}
+.predictions-page .forecast-panel .secondary-button{background:#202e42!important;border-color:#40516a!important;color:#f6f5f0!important}
+.predictions-page .subheading-row h2{color:#f6f5f0!important}
+.predictions-page .subheading-row>span{color:#aebbd0!important}
+.predictions-page .empty-state{background:#172338!important;border:1px solid #34455d!important;color:#f6f5f0!important;border-radius:13px!important;padding:18px!important}
+.predictions-page .empty-state span{color:#aebbd0!important}
+@media(max-width:760px){
+ .predictions-page .prediction-week-summary{align-items:flex-start!important;padding:12px!important}
+ .predictions-page .prediction-day-tabs{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+ .predictions-page .prediction-match{grid-template-columns:18px minmax(0,1fr) 20px!important;gap:8px!important;padding:11px!important}
+ .predictions-page .prediction-match-main>strong{font-size:11px!important}
+ .predictions-page .prediction-stats{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
+ .predictions-page .prediction-stats>div{padding:9px!important}
+ .predictions-page .prediction-stats span,.predictions-page .prediction-stats small{font-size:8px!important}
+ .predictions-page .prediction-stats strong{font-size:19px!important}
+ .predictions-page .forecast-panel{padding:13px!important;gap:10px!important}
+}
