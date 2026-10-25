@@ -3046,3 +3046,70 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .notification-row-chevron{display:none}
 }
 @media(prefers-reduced-motion:reduce){.notification-row-premium{transition:none!important}}
+
+
+/* Football Forum design-system pass: shared surfaces, typography rhythm and responsive controls */
+:root{
+ --ff-navy:#101827;--ff-slate:#202c40;--ff-lime:#c7f36b;--ff-paper:#f6f5f0;
+ --ff-ink:#172235;--ff-muted:#778294;--ff-border:rgba(25,39,59,.11);
+ --ff-radius-card:16px;--ff-radius-control:10px;
+}
+.page-heading h1,.page-heading h2,.feed-heading h2,.subheading-row h2,
+.profile-main h2,.notifications-hero h1,.arena-room-hero h1{
+ font-family:Manrope,'DM Sans',sans-serif;letter-spacing:-.035em;
+}
+.content-panel,.post-card,.club-card,.detail-post,.side-panel,.notification-row-premium,
+.prediction-card,.level-card,.create-discussion-page,.discussion-page .detail-post{
+ border-radius:var(--ff-radius-card);
+}
+.post-card,.club-card,.content-panel,.detail-post,.side-panel,.prediction-card{
+ box-shadow:0 7px 24px rgba(16,24,39,.035);
+}
+.create-button,.secondary-button,.join-debate,.clubhouse-quick-start,.game-arena-join,
+.club-circles-explore,.notification-row-chevron{
+ transition:transform .18s ease,border-color .18s ease,background-color .18s ease,box-shadow .18s ease;
+}
+.create-button:hover,.secondary-button:hover,.join-debate:hover,.clubhouse-quick-start:hover,
+.game-arena-join:hover,.club-circles-explore:hover{
+ transform:translateY(-1px);
+}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+ outline:3px solid rgba(199,243,107,.9);outline-offset:3px;
+}
+.field-label,.panel-eyebrow,.section-kicker,.eyebrow,.sidebar-label{
+ letter-spacing:.105em;
+}
+.post-card,.club-card,.content-panel,.side-panel,.notification-row-premium{
+ border-color:var(--ff-border);
+}
+.level-insignia{
+ display:inline-grid;place-items:center;flex:0 0 auto;width:39px;height:39px;
+ color:#d9f5a0;border:1px solid rgba(199,243,107,.34);border-radius:12px;
+ background:radial-gradient(circle at 28% 18%,rgba(199,243,107,.18),transparent 55%),linear-gradient(145deg,#26364b,#101827);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 5px 12px rgba(16,24,39,.12);
+}
+.level-insignia svg{display:block;width:27px;height:27px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.18))}
+.level-insignia-1{color:#d7e5c4}
+.level-insignia-2{color:#c7f36b}
+.level-insignia-3{color:#a6d9ef;border-color:rgba(166,217,239,.4)}
+.level-insignia-4{color:#f0dca3;border-color:rgba(240,220,163,.4)}
+.level-insignia-5{color:#f3c17a;border-color:rgba(243,193,122,.45);background:radial-gradient(circle at 28% 18%,rgba(243,193,122,.2),transparent 55%),linear-gradient(145deg,#493624,#171a22)}
+.level-insignia-6{color:#f4e8b0;border-color:rgba(244,232,176,.58);background:radial-gradient(circle at 28% 18%,rgba(244,232,176,.24),transparent 55%),linear-gradient(145deg,#65502d,#171a22);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 5px 15px rgba(16,24,39,.2)}
+.level-insignia-compact{width:29px;height:29px;border-radius:9px}
+.level-insignia-compact svg{width:20px;height:20px}
+.level-row .level-insignia{width:36px;height:36px;border-radius:11px}
+.level-row .level-insignia svg{width:25px;height:25px}
+.level-current .level-insignia{box-shadow:0 0 0 3px rgba(199,243,107,.11),inset 0 1px 0 rgba(255,255,255,.12)}
+.level-row{gap:12px}
+.level-row-number{min-width:18px}
+.level-row-state{white-space:nowrap}
+.level-card .level-insignia-compact{margin-right:1px}
+@media(max-width:760px){
+ .content-panel,.post-card,.club-card,.side-panel,.notification-row-premium{border-radius:14px}
+ .level-row{gap:8px}
+ .level-row .level-insignia{width:33px;height:33px}
+ .level-row .level-insignia svg{width:23px;height:23px}
+}
+@media(prefers-reduced-motion:reduce){
+ .create-button,.secondary-button,.join-debate,.clubhouse-quick-start,.game-arena-join,.club-circles-explore{transition:none!important}
+}
