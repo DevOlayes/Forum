@@ -2813,3 +2813,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .predictions-page .prediction-match-clean .prediction-result strong{font-size:9px!important}
  .predictions-page .prediction-match-clean .prediction-open{width:18px!important;min-width:18px!important}
 }
+
+
+/* Global Football Forum header: pinned across desktop and mobile layouts */
+.app-shell>.topbar{
+ position:sticky!important;
+ top:0!important;
+ z-index:1000!important;
+ width:100%!important;
+ isolation:isolate!important;
+}
+.app-shell>.topbar .topbar-inner{position:relative!important;z-index:1!important}
+@media(max-width:760px){
+ .app-shell>.topbar{position:sticky!important;top:0!important;z-index:1000!important}
+ .app-shell>.topbar .topbar-inner{min-height:62px!important}
+}
