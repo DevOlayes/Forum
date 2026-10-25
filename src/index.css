@@ -2936,3 +2936,26 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .level-row-emblem{width:32px!important;height:32px!important;flex-shrink:0}
  .level-row-state{font-size:8px!important;padding:4px 6px!important;white-space:nowrap}
 }
+
+
+/* Keep the sticky header and its menu controls above every page layer */
+.app-shell>.topbar{
+ position:sticky!important;position:-webkit-sticky!important;
+ top:0!important;z-index:2147483000!important;
+ isolation:isolate!important;transform:translateZ(0)!important;
+}
+.app-shell>.topbar .topbar-inner{position:relative!important;z-index:1!important}
+.app-shell>.topbar .mobile-menu{position:relative!important;z-index:2!important}
+.app-shell>.topbar .brand-button,.app-shell>.topbar .search-box,.app-shell>.topbar .top-actions{
+ position:relative!important;z-index:1!important
+}
+/* Drawer and backdrop sit immediately beneath the header, never over it */
+.page-layout.menu-is-open .sidebar-backdrop{z-index:2147482000!important;top:var(--forum-header-height,62px)!important}
+.page-layout.menu-is-open .left-sidebar,
+.page-layout.menu-is-open .left-sidebar.sidebar-open{z-index:2147482500!important;top:var(--forum-header-height,62px)!important}
+@media(max-width:760px){
+ .app-shell>.topbar{z-index:2147483000!important}
+ .page-layout.menu-is-open .sidebar-backdrop{top:62px!important}
+ .page-layout.menu-is-open .left-sidebar,
+ .page-layout.menu-is-open .left-sidebar.sidebar-open{top:62px!important;z-index:2147482500!important}
+}
