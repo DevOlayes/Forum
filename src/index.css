@@ -2497,3 +2497,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .create-discussion-page textarea{min-height:140px!important}
  .create-discussion-page .composer-bottom .create-button{max-width:100%!important}
 }
+
+
+.clubhouse-heading-actions{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important;flex-wrap:wrap!important}
+.clubhouse-quick-start{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;
+ min-height:38px!important;padding:0 12px!important;border:1px solid rgba(199,243,107,.38)!important;
+ border-radius:10px!important;background:#c7f36b!important;color:#172116!important;
+ font-size:11px!important;font-weight:800!important;white-space:nowrap!important;
+}
+.clubhouse-quick-start:hover{background:#d4fb83!important;transform:translateY(-1px)!important}
+@media(max-width:520px){
+ .clubhouse-heading-actions{align-items:flex-end!important;gap:8px!important}
+ .clubhouse-heading-actions .public-label{font-size:9px!important}
+ .clubhouse-quick-start{min-height:35px!important;padding:0 10px!important;font-size:10px!important}
+}
