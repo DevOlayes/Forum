@@ -2107,3 +2107,80 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
     box-shadow:20px 0 55px rgba(0,0,0,.55)!important;
   }
 }
+
+
+/* Discover Football: align search and clubhouse cards with the premium home design. */
+.discover-search{
+  position:relative!important;display:flex!important;align-items:center!important;gap:12px!important;
+  height:54px!important;box-sizing:border-box!important;margin:0 0 22px!important;padding:0 15px!important;
+  border:1px solid #34445a!important;border-radius:15px!important;
+  background:linear-gradient(145deg,#172235,#131e30)!important;color:#b8c8dc!important;
+  box-shadow:0 8px 24px rgba(0,0,0,.12)!important;
+}
+.discover-search>svg{flex:0 0 auto!important;color:#c7f36b!important}
+.discover-search input,
+.discover-search input:focus,
+.discover-search input:focus-visible{
+  display:block!important;flex:1 1 auto!important;width:0!important;min-width:0!important;
+  height:100%!important;box-sizing:border-box!important;margin:0!important;padding:0!important;
+  border:0!important;outline:0!important;outline-offset:0!important;box-shadow:none!important;
+  border-radius:0!important;background:transparent!important;color:#f6f5f0!important;
+  font:500 13px/1.4 'DM Sans',sans-serif!important;appearance:none!important;-webkit-appearance:none!important;
+}
+.discover-search input::placeholder{color:#91a2b9!important;opacity:1!important}
+.discover-search input::-webkit-search-decoration,
+.discover-search input::-webkit-search-cancel-button{-webkit-appearance:none!important}
+.discover-search:focus-within{border-color:#647d4c!important;box-shadow:0 0 0 3px rgba(199,243,107,.08)!important}
+.discover-search>svg:last-child{color:#a8b7ca!important}
+.subheading-row{margin:20px 0 11px!important;align-items:center!important}
+.subheading-row h2{font-size:20px!important;letter-spacing:-.55px!important;color:#f6f5f0!important}
+.subheading-row>span{font-size:11px!important;line-height:1.45!important;color:#94a4b9!important}
+.club-grid{gap:10px!important}
+.club-card{
+  display:flex!important;flex-direction:column!important;min-width:0!important;
+  padding:13px!important;border:1px solid #34445a!important;border-radius:14px!important;
+  background:linear-gradient(145deg,#192538 0%,#152033 100%)!important;
+  box-shadow:0 7px 20px rgba(0,0,0,.12)!important;
+}
+.club-card-top{min-height:42px!important;gap:8px!important}
+.club-card .crest-large{width:43px!important;height:46px!important;flex:0 0 43px!important;font-size:14px!important}
+.club-members{display:inline-flex!important;align-items:center!important;gap:5px!important;color:#9cacc0!important;font-size:10px!important;white-space:nowrap!important}
+.club-card h3{margin:10px 0 4px!important;color:#f6f5f0!important;font-size:15px!important;line-height:1.25!important;letter-spacing:-.25px!important}
+.club-card p{
+  flex:1 1 auto!important;min-height:0!important;margin:0 0 10px!important;
+  color:#b0bfd1!important;font-size:11px!important;line-height:1.5!important;
+}
+.club-card-bottom{margin-top:auto!important;padding-top:9px!important;border-top:1px solid #34445a!important}
+.club-card .secondary-button{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;
+  min-height:36px!important;padding:8px 10px!important;border:1px solid #40516a!important;
+  border-radius:10px!important;background:#202e43!important;color:#f3f6fa!important;
+  font-size:11px!important;font-weight:750!important;line-height:1.2!important;
+}
+.club-card .secondary-button svg{width:14px!important;height:14px!important;flex:0 0 auto!important}
+.club-card .secondary-button:hover{background:#293b53!important;border-color:#c7f36b!important}
+@media(max-width:700px){
+  .discover-search{height:50px!important;gap:10px!important;padding:0 12px!important;margin-bottom:18px!important;border-radius:13px!important}
+  .discover-search input,.discover-search input:focus,.discover-search input:focus-visible{font-size:12px!important}
+  .subheading-row{margin:18px 0 10px!important}
+  .subheading-row h2{font-size:19px!important}
+  .subheading-row>span{font-size:10px!important}
+  .club-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+  .club-card{padding:11px!important;border-radius:13px!important}
+  .club-card-top{min-height:36px!important}
+  .club-card .crest-large{width:38px!important;height:41px!important;flex-basis:38px!important;font-size:12px!important}
+  .club-members{font-size:9px!important;gap:4px!important}
+  .club-members svg{width:12px!important;height:12px!important}
+  .club-card h3{font-size:13px!important;margin:8px 0 4px!important;overflow-wrap:anywhere!important}
+  .club-card p{font-size:10px!important;line-height:1.45!important;margin-bottom:8px!important}
+  .club-card-bottom{padding-top:8px!important}
+  .club-card .secondary-button{min-height:33px!important;padding:7px 8px!important;font-size:10px!important;gap:5px!important}
+}
+@media(max-width:390px){
+  .club-grid{grid-template-columns:1fr!important}
+  .club-card{padding:12px!important}
+  .club-card-top{min-height:40px!important}
+  .club-card .crest-large{width:42px!important;height:45px!important;flex-basis:42px!important}
+  .club-card h3{font-size:14px!important}
+  .club-card p{font-size:11px!important}
+}
