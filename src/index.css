@@ -3113,3 +3113,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(prefers-reduced-motion:reduce){
  .create-button,.secondary-button,.join-debate,.clubhouse-quick-start,.game-arena-join,.club-circles-explore{transition:none!important}
 }
+
+.profile-name-with-insignia{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.profile-name-with-insignia .level-insignia{vertical-align:middle}
+.level-next .level-insignia{width:24px;height:24px;border-radius:7px}
+.level-next .level-insignia svg{width:17px;height:17px}
