@@ -3222,3 +3222,23 @@ body{background:#101827!important;color:#f6f5f0!important}
 .post-actions .content-view-count{margin-right:auto}
 .clubhouse-meta .clubhouse-content-views{color:#aebbd0}
 @media(max-width:600px){.content-view-count{font-size:11px;gap:4px}.featured-topic-stats .content-view-count{flex-basis:auto}.detail-post-actions{flex-wrap:wrap;gap:12px}.detail-post-actions .content-view-count{margin-right:0}.post-actions{flex-wrap:wrap;gap:10px}.post-actions .content-view-count{margin-right:0}}
+
+
+/* Explicit follow-button contrast: override inherited white text on discussion detail */
+.discussion-page .detail-post-author .member-follow-button,
+.detail-post-author .member-follow-button{background:#c7f36b!important;border:1px solid #c7f36b!important;color:#111827!important;text-shadow:none!important;opacity:1!important;filter:none!important}
+.discussion-page .detail-post-author .member-follow-button span,
+.discussion-page .detail-post-author .member-follow-button svg,
+.detail-post-author .member-follow-button span,
+.detail-post-author .member-follow-button svg{color:#111827!important;stroke:#111827!important;fill:none!important;opacity:1!important}
+.discussion-page .detail-post-author .member-follow-button.is-following,
+.detail-post-author .member-follow-button.is-following{background:rgba(199,243,107,.1)!important;border-color:rgba(199,243,107,.65)!important;color:#c7f36b!important}
+.discussion-page .detail-post-author .member-follow-button.is-following span,
+.discussion-page .detail-post-author .member-follow-button.is-following svg,
+.detail-post-author .member-follow-button.is-following span,
+.detail-post-author .member-follow-button.is-following svg{color:#c7f36b!important;stroke:#c7f36b!important}
+/* Homepage uses the same post-card structure and engagement row as Clubhouse */
+.home-posts-list{display:flex;flex-direction:column;gap:12px}
+.home-posts-list .post-card{width:100%;min-width:0}
+.home-posts-list .post-actions .content-view-count{display:inline-flex}
+@media(max-width:600px){.home-posts-list{gap:10px}.detail-post-author .member-follow-button{min-height:36px;padding:0 12px;font-size:12px}}
