@@ -3391,3 +3391,53 @@ body{background:#101827!important;color:#f6f5f0!important}
   .home-posts-list .post-card .post-actions .share-action,
   .post-card .post-actions .share-action{width:34px!important;min-width:34px!important;flex-basis:34px!important;height:34px!important}
 }
+
+
+/* Premium discussion detail polish: restore pill reactions and balance the action rail. */
+.detail-post-actions .reaction-action,
+.post-actions .reaction-action{
+  border-radius:999px!important;
+  min-height:38px!important;
+  padding:0 15px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  white-space:nowrap!important;
+  line-height:1!important;
+}
+.detail-post-actions{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding:10px 0 2px!important;
+}
+.detail-post-actions .content-view-count{margin-right:0!important;padding-right:0!important}
+.detail-post-actions>span:not(.content-view-count){display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.detail-post-actions .share-action{flex:0 0 34px!important;width:34px!important;min-width:34px!important;height:34px!important}
+.detail-post-content{padding-top:18px!important;padding-bottom:20px!important}
+.detail-post-content h1{letter-spacing:-.035em!important;line-height:1.16!important;text-wrap:balance}
+.detail-post-content p{line-height:1.7!important;max-width:68ch}
+.detail-post,.discussion-replies{box-shadow:0 14px 36px rgba(0,0,0,.12)!important}
+@media(max-width:600px){
+ .detail-post{border-radius:16px!important}
+ .detail-post-content{padding:14px 16px 17px!important}
+ .detail-post-content h1{font-size:clamp(25px,6.2vw,32px)!important;line-height:1.18!important}
+ .detail-post-content p{font-size:15px!important;line-height:1.65!important}
+ .detail-post-actions{
+   display:grid!important;
+   grid-template-columns:minmax(0,1fr) auto auto auto auto!important;
+   align-items:center!important;
+   justify-content:initial!important;
+   gap:7px!important;
+   padding:9px 0 1px!important;
+ }
+ .detail-post-actions .content-view-count{font-size:10px!important;gap:4px!important;min-width:0}
+ .detail-post-actions .reaction-action{min-height:36px!important;padding:0 12px!important;border-radius:999px!important;gap:6px!important}
+ .detail-post-actions>span:not(.content-view-count){gap:4px!important;font-size:11px!important}
+ .detail-post-actions>button:not(.reaction-action):not(.share-action){padding:0 2px!important;font-size:11px!important}
+ .detail-post-actions .share-action{width:32px!important;min-width:32px!important;flex-basis:32px!important;height:32px!important}
+}
