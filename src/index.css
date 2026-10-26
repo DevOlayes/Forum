@@ -4036,3 +4036,66 @@ body{background:#101827!important;color:#f6f5f0!important}
   .discussion-page .nested-comment .comment-author strong{font-size:12px!important;}
   .discussion-page .nested-comment .comment-author>span{font-size:10px!important;}
 }
+
+
+/* One consistent electric-lime treatment for every post category label,
+   including category labels inside the opened discussion. */
+.feed-category,
+.feed-category *,
+.post-tag,
+.post-tag *,
+.member-post-preview .post-tag,
+.discussion-page .detail-post-content .post-tag,
+.post-meta .feed-category,
+.post-content .post-tag{
+  color:#c7f36b!important;
+}
+.post-tag>span{background:#c7f36b!important;border-color:#c7f36b!important;}
+
+/* Compact, contemporary profile statistics — one consistent scale. */
+.profile-hero-unified{padding:16px!important;gap:10px!important;}
+.profile-identity-row{gap:12px!important;}
+.profile-identity-row .avatar{width:52px!important;height:52px!important;flex:0 0 52px!important;}
+.member-stats-panel{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  align-items:center!important;
+  gap:4px!important;
+  margin:12px 0!important;
+  padding:9px 4px!important;
+  border-radius:13px!important;
+}
+.member-stats-panel>button{
+  display:flex!important;
+  min-width:0!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:3px!important;
+  padding:4px 2px!important;
+}
+.member-stats-panel>button strong{
+  font-size:18px!important;
+  line-height:1.15!important;
+  font-weight:800!important;
+  letter-spacing:-.035em!important;
+  font-variant-numeric:tabular-nums!important;
+}
+.member-stats-panel>button span{font-size:10px!important;line-height:1.3!important;}
+.member-stats-panel>button small{font-size:9px!important;line-height:1.2!important;}
+.member-stats-panel>i{height:28px!important;}
+.profile-bio{font-size:12px!important;line-height:1.5!important;margin:9px 0!important;}
+.profile-tags{gap:6px!important;}
+.profile-tags>span{font-size:9px!important;padding:5px 7px!important;}
+.profile-actions-row{margin-top:10px!important;}
+.profile-name-with-insignia{font-size:17px!important;line-height:1.25!important;}
+.profile-handle{font-size:10px!important;}
+.profile-metric{padding:10px 0!important;gap:9px!important;font-size:11px!important;}
+.profile-metric strong{font-size:12px!important;}
+@media(max-width:600px){
+  .profile-hero-unified{padding:13px!important;gap:9px!important;}
+  .profile-identity-row .avatar{width:46px!important;height:46px!important;flex-basis:46px!important;}
+  .member-stats-panel{margin:10px 0!important;padding:8px 2px!important;}
+  .member-stats-panel>button strong{font-size:17px!important;}
+  .member-stats-panel>button span{font-size:10px!important;}
+}
