@@ -3297,3 +3297,29 @@ body{background:#101827!important;color:#f6f5f0!important}
  .arena-share-button{min-height:27px;padding:0 7px;font-size:9px;gap:4px}
  .arena-share-button svg{width:13px;height:13px}
 }
+
+
+/* Give the feed engagement controls deliberate breathing room on mobile. */
+.home-posts-list .post-actions,
+.post-card .post-actions{
+  justify-content:space-between!important;
+  column-gap:10px!important;
+}
+.post-actions .reaction-action{
+  min-height:38px!important;
+  padding:0 12px!important;
+  gap:7px!important;
+  border-radius:13px!important;
+}
+.post-actions>button:not(.reaction-action):not(.share-action){
+  min-height:34px;
+  padding:0 4px;
+}
+.post-actions .share-action{margin-left:2px}
+@media(max-width:600px){
+  .home-posts-list .post-actions,
+  .post-card .post-actions{column-gap:8px!important}
+  .post-actions .reaction-action{min-height:38px!important;padding:0 12px!important;gap:7px!important}
+  .post-actions>button:not(.reaction-action):not(.share-action){padding:0 3px;min-width:26px}
+  .post-actions .share-action{margin-left:2px}
+}
