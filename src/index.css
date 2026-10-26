@@ -4099,3 +4099,41 @@ body{background:#101827!important;color:#f6f5f0!important}
   .member-stats-panel>button strong{font-size:17px!important;}
   .member-stats-panel>button span{font-size:10px!important;}
 }
+
+
+/* Compact profile card: fit identity and four key metrics into a shorter header. */
+.profile-hero-unified{
+  padding:12px!important;
+  gap:7px!important;
+}
+.profile-identity-row{gap:10px!important;align-items:center!important;}
+.profile-identity-row .avatar{width:44px!important;height:44px!important;flex:0 0 44px!important;}
+.profile-name-with-insignia{font-size:15px!important;line-height:1.2!important;margin:0!important;}
+.profile-handle{font-size:10px!important;line-height:1.25!important;margin:3px 0 0!important;}
+.profile-bio{font-size:11px!important;line-height:1.35!important;margin:6px 0!important;}
+.member-stats-panel.member-stats-four{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:0!important;
+  margin:7px 0 0!important;
+  padding:8px 2px!important;
+  border-radius:12px!important;
+}
+.member-stats-panel.member-stats-four>button,
+.member-stats-panel.member-stats-four>.profile-reaction-stat{
+  display:flex!important;min-width:0!important;flex-direction:column!important;
+  align-items:center!important;justify-content:center!important;gap:3px!important;
+  padding:2px 1px!important;text-align:center!important;
+}
+.member-stats-panel.member-stats-four>button strong,
+.member-stats-panel.member-stats-four>.profile-reaction-stat strong{
+  font-size:16px!important;line-height:1.1!important;font-weight:800!important;
+  letter-spacing:-.03em!important;font-variant-numeric:tabular-nums!important;
+}
+.member-stats-panel.member-stats-four>button span,
+.member-stats-panel.member-stats-four>.profile-reaction-stat span{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  gap:3px!important;font-size:9px!important;line-height:1.2!important;white-space:nowrap!important;
+}
+.member-stats-panel.member-stats-four>i{display:none!important;}
+.profile-edit-compact{margin-left:auto!important;flex:0 0 30px!important;width:30px!important;height:30px!important;}
