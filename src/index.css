@@ -3353,3 +3353,41 @@ body{background:#101827!important;color:#f6f5f0!important}
   .home-posts-list .post-card .post-actions .reaction-action,
   .post-card .post-actions .reaction-action{padding-inline:11px!important;flex:0 0 auto!important}
 }
+
+
+/* Refine engagement rail rhythm: consistent control sizing and less visual imbalance. */
+.home-posts-list .post-card .post-actions .reaction-action,
+.post-card .post-actions .reaction-action{
+  min-height:36px!important;
+  border-radius:12px!important;
+  padding:0 11px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  line-height:1!important;
+}
+.home-posts-list .post-card .post-actions>button:not(.reaction-action),
+.post-card .post-actions>button:not(.reaction-action){
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:5px!important;
+  min-height:34px!important;
+  border-radius:9px;
+  line-height:1!important;
+}
+.home-posts-list .post-card .post-actions .share-action,
+.post-card .post-actions .share-action{
+  width:34px!important;min-width:34px!important;flex-basis:34px!important;height:34px!important;
+}
+@media(max-width:600px){
+  .home-posts-list .post-card .post-actions,
+  .post-card .post-actions{gap:7px!important;padding-inline:3px!important}
+  .home-posts-list .post-card .post-actions .reaction-action,
+  .post-card .post-actions .reaction-action{min-height:36px!important;padding:0 10px!important;gap:6px!important}
+  .home-posts-list .post-card .post-actions>button:not(.reaction-action),
+  .post-card .post-actions>button:not(.reaction-action){min-height:34px!important;padding-inline:2px}
+  .home-posts-list .post-card .post-actions .share-action,
+  .post-card .post-actions .share-action{width:34px!important;min-width:34px!important;flex-basis:34px!important;height:34px!important}
+}
