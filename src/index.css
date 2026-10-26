@@ -4513,3 +4513,14 @@ body{background:#101827!important;color:#f6f5f0!important}
  .comment-item .comment-author,.nested-comment .comment-author{column-gap:5px!important;}
  .comment-item .comment-author>span,.nested-comment .comment-author>span{font-size:9px!important;}
 }
+
+
+/* Keep the overflow menu adjacent to the timestamp across author and reply headers. */
+.comment-item .comment-author,
+.nested-comment .comment-author{grid-template-columns:minmax(0,1fr) auto auto!important;column-gap:6px!important;}
+.comment-item .comment-author>span,
+.nested-comment .comment-author>span{grid-column:2!important;grid-row:1!important;justify-self:end!important;}
+.comment-item .comment-author>button,
+.nested-comment .comment-author>button{grid-column:3!important;grid-row:1!important;justify-self:end!important;margin-left:0!important;}
+.detail-post-author .post-more{margin-left:6px!important;flex:0 0 28px!important;}
+.post-top .post-more{margin-left:0!important;flex:0 0 28px!important;}
