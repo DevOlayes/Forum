@@ -4675,3 +4675,49 @@ body{background:#101827!important;color:#f6f5f0!important}
     padding-bottom:2px!important;
   }
 }
+
+
+/* Targeted correction: reduce the actual reaction row and clubhouse card height. */
+.post-card .post-footer{
+  padding:0!important;
+  margin-top:0!important;
+}
+.post-card .post-actions{
+  padding:5px 10px 6px!important;
+  min-height:0!important;
+  line-height:1.2!important;
+}
+.post-card .post-actions button{
+  padding-top:2px!important;
+  padding-bottom:2px!important;
+  line-height:1.2!important;
+}
+.club-circles-section{
+  padding-top:8px!important;
+  padding-bottom:6px!important;
+  margin-top:0!important;
+  margin-bottom:8px!important;
+}
+.club-circles-heading{
+  margin-top:0!important;
+  margin-bottom:4px!important;
+}
+.club-circles-row{
+  padding-top:0!important;
+  padding-bottom:0!important;
+  margin-top:0!important;
+  margin-bottom:0!important;
+}
+@media(max-width:700px){
+  .post-card .post-actions{
+    padding:4px 8px 5px!important;
+  }
+  .club-circles-section{
+    padding-top:6px!important;
+    padding-bottom:5px!important;
+    margin-bottom:6px!important;
+  }
+  .club-circles-heading{
+    margin-bottom:3px!important;
+  }
+}
