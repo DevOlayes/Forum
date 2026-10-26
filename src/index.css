@@ -3500,3 +3500,26 @@ body{background:#101827!important;color:#f6f5f0!important}
  .discussion-page .detail-post-actions .share-action{width:30px!important;min-width:30px!important;flex:0 0 30px!important;height:32px!important}
  .discussion-page .discussion-replies{border-radius:0 0 18px 18px!important}
 }
+
+
+/* Match discussion detail width to the homepage feed and restore card-to-card rhythm. */
+.discussion-page{width:100%!important;max-width:none!important;min-width:0!important}
+.discussion-page .detail-post,
+.discussion-page .discussion-replies{width:100%!important;max-width:none!important;box-sizing:border-box!important}
+.discussion-layout>.feed-column,
+.page-layout.discussion-layout>.feed-column{min-width:0!important;width:100%!important;max-width:none!important}
+/* Separate the discussion surface from the replies panel with a deliberate seam. */
+.discussion-page .detail-post{margin-bottom:0!important}
+.discussion-page .discussion-replies{margin-top:0!important}
+.home-posts-list{gap:16px!important}
+.home-posts-list .post-card{margin-bottom:0!important}
+.featured-topic-row{margin-bottom:18px!important}
+@media(max-width:700px){
+ .discussion-layout>.feed-column,
+ .page-layout.discussion-layout>.feed-column{padding-left:0!important;padding-right:0!important}
+ .discussion-page .detail-post{border-radius:20px 20px 0 0!important}
+ .discussion-page .discussion-replies{border-radius:0 0 20px 20px!important;margin-bottom:18px!important}
+ .home-posts-list{gap:16px!important}
+ .home-posts-list .post-card{border-radius:18px!important}
+ .featured-topic-row{margin-bottom:20px!important}
+}
