@@ -3994,3 +3994,45 @@ body{background:#101827!important;color:#f6f5f0!important}
 .home-page .post-card .post-footer .post-actions .share-action svg{
   width:16px!important;height:16px!important;
 }
+
+
+/* Keep nested-reply author names and timestamps on a single line. */
+.discussion-page .nested-comment .comment-main,
+.discussion-page .nested-comment .comment-author{
+  min-width:0!important;
+}
+.discussion-page .nested-comment .comment-author{
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  align-items:center!important;
+  gap:8px!important;
+  width:100%!important;
+}
+.discussion-page .nested-comment .comment-author strong{
+  display:block!important;
+  flex:0 0 auto!important;
+  min-width:max-content!important;
+  max-width:none!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  word-break:keep-all!important;
+  overflow-wrap:normal!important;
+}
+.discussion-page .nested-comment .comment-author>span{
+  display:block!important;
+  flex:0 0 auto!important;
+  min-width:max-content!important;
+  white-space:nowrap!important;
+  word-break:keep-all!important;
+  overflow-wrap:normal!important;
+}
+.discussion-page .nested-comment .comment-author>button{
+  flex:0 0 26px!important;
+  margin-left:auto!important;
+}
+@media(max-width:600px){
+  .discussion-page .nested-comment .comment-author{gap:7px!important;}
+  .discussion-page .nested-comment .comment-author strong{font-size:12px!important;}
+  .discussion-page .nested-comment .comment-author>span{font-size:10px!important;}
+}
