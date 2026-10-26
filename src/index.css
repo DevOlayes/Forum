@@ -3938,3 +3938,59 @@ body{background:#101827!important;color:#f6f5f0!important}
   border-color:#c7f36b!important;
   color:#c7f36b!important;
 }
+
+
+/* Homepage post engagement row: match the opened-post reference as a complete row,
+   not just the flame capsule. Keep the detail page untouched. */
+.home-page .post-card .post-footer .post-actions{
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  flex-wrap:nowrap!important;
+  gap:clamp(6px,1.6vw,11px)!important;
+  width:100%!important;
+  min-width:0!important;
+  padding:9px 12px 11px!important;
+  box-sizing:border-box!important;
+}
+.home-page .post-card .post-footer .post-actions .content-view-count{
+  display:inline-flex!important;align-items:center!important;gap:3px!important;
+  flex:0 1 auto!important;min-width:0!important;font-size:10px!important;white-space:nowrap!important;
+}
+.home-page .post-card .post-footer .post-actions .content-view-count svg{
+  width:13px!important;height:13px!important;flex:0 0 13px!important;
+}
+.home-page .post-card .post-footer .post-actions .reaction-action{
+  flex:0 0 auto!important;min-width:58px!important;width:auto!important;
+  height:36px!important;min-height:36px!important;padding:0 10px!important;gap:5px!important;
+}
+.home-page .post-card .post-footer .post-actions .reaction-action>span{display:none!important;}
+.home-page .post-card .post-footer .post-actions>button[aria-label="View replies"],
+.home-page .post-card .post-footer .post-actions>button:not(.reaction-action):not(.share-action):not([aria-label="Save discussion"]){
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  flex:0 1 auto!important;min-width:0!important;gap:4px!important;
+  padding:0!important;margin:0!important;border:0!important;background:transparent!important;
+  color:#d5deea!important;font-size:10px!important;white-space:nowrap!important;
+}
+.home-page .post-card .post-footer .post-actions>button[aria-label="View replies"] svg{
+  width:16px!important;height:16px!important;flex:0 0 16px!important;
+}
+.home-page .post-card .post-footer .post-actions>button[aria-label="Save discussion"]{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  flex:0 1 auto!important;min-width:0!important;gap:4px!important;
+  padding:0!important;margin:0!important;border:0!important;background:transparent!important;
+  color:#d5deea!important;font-size:10px!important;white-space:nowrap!important;
+}
+.home-page .post-card .post-footer .post-actions>button[aria-label="Save discussion"] svg{
+  width:15px!important;height:15px!important;flex:0 0 15px!important;
+}
+.home-page .post-card .post-footer .post-actions .share-action{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  flex:0 0 28px!important;width:28px!important;min-width:28px!important;height:28px!important;
+  padding:0!important;margin:0!important;border:0!important;border-radius:0!important;
+  background:transparent!important;box-shadow:none!important;color:#d5deea!important;
+}
+.home-page .post-card .post-footer .post-actions .share-action svg{
+  width:16px!important;height:16px!important;
+}
