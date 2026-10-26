@@ -4370,3 +4370,50 @@ body{background:#101827!important;color:#f6f5f0!important}
   .comment-item .comment-author,.nested-comment .comment-author{gap:5px!important;}
   .comment-item .comment-author>span,.nested-comment .comment-author>span{font-size:9px!important;}
 }
+
+
+/* Unified author header: name and timestamp share the first line; clubhouse badge sits below. */
+.post-author-topline{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  width:100%!important;
+  min-width:0!important;
+}
+.post-author-topline .feed-author-name{
+  display:flex!important;
+  align-items:center!important;
+  gap:5px!important;
+  min-width:0!important;
+  flex:1 1 auto!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+}
+.post-author-topline .feed-author-name strong,
+.post-author-topline .feed-author-name .post-handle{
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+}
+.post-author-topline .feed-post-time{
+  flex:0 0 auto!important;
+  margin-left:auto!important;
+  white-space:nowrap!important;
+  line-height:1.25!important;
+}
+.post-author .post-author-clubhouse{margin-top:4px!important;}
+.member-author-copy{display:flex!important;flex-direction:column!important;justify-content:center!important;align-self:center!important;min-width:0!important;gap:4px!important;}
+.member-author-name{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  min-width:0!important;
+  width:100%!important;
+  white-space:nowrap!important;
+}
+.member-author-name-copy{display:flex!important;align-items:center!important;gap:5px!important;min-width:0!important;flex:1 1 auto!important;overflow:hidden!important;white-space:nowrap!important;}
+.member-author-name-copy strong{overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;}
+.member-author-name .detail-author-time{flex:0 0 auto!important;margin:0!important;white-space:nowrap!important;line-height:1.25!important;}
+.member-author-copy .detail-author-clubhouse{align-self:flex-start!important;margin-top:0!important;}
