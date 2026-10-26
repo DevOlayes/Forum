@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Activity, ArrowRight, Bell, Bookmark, Check, ChevronDown, ChevronRight, CircleHelp, Flame, Hash, Home, ImagePlus, LockKeyhole, Menu, MessageCircle, MoreHorizontal, Plus, Search, Send, ShieldCheck, Sparkles, Star, TrendingUp, Trophy, Users, Vote, X, Flag, Clock3, Settings, UserRound, Filter, CircleDot, CalendarDays, Eye, LogIn, Trash2 } from 'lucide-react';
+import { Activity, ArrowLeft, ArrowRight, Bell, Bookmark, Check, ChevronDown, ChevronRight, CircleHelp, Flame, Hash, Home, ImagePlus, LockKeyhole, Menu, MessageCircle, MoreHorizontal, Plus, Search, Send, ShieldCheck, Sparkles, Star, TrendingUp, Trophy, Users, Vote, X, Flag, Clock3, Settings, UserRound, Filter, CircleDot, CalendarDays, Eye, LogIn, Trash2 } from 'lucide-react';
 
 const clubs = [
  {name:'Arsenal',short:'ARS',letter:'A',logo:'https://media.api-sports.io/football/teams/42.png',color:'#d7464f',members:'12.8k',description:'North London, big ideas and a whole lot to debate.'},
