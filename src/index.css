@@ -4877,3 +4877,69 @@ body{background:#101827!important;color:#f6f5f0!important}
     gap:6px!important;
   }
 }
+
+
+/* Homepage vertical rhythm: bring the guest notice, Match Arena, clubhouses, and feed closer together. */
+.guest-notice{
+  margin-bottom:0!important;
+}
+.app-shell .page-layout{
+  padding-top:8px!important;
+}
+.home-page .game-arena-strip.game-arena-compact{
+  margin-top:0!important;
+  margin-bottom:10px!important;
+}
+.home-page .club-circles-section{
+  margin-top:0!important;
+  margin-bottom:5px!important;
+  padding-top:8px!important;
+  padding-bottom:8px!important;
+}
+.home-page .club-circles-heading{
+  margin-top:0!important;
+  margin-bottom:7px!important;
+}
+.home-page .feed-heading{
+  margin-top:2px!important;
+  margin-bottom:8px!important;
+}
+.home-page .topic-tabs{
+  margin-top:0!important;
+  margin-bottom:6px!important;
+}
+.home-page .quick-compose{
+  margin-top:0!important;
+  margin-bottom:7px!important;
+}
+@media(max-width:700px){
+  .guest-notice{
+    margin-bottom:0!important;
+  }
+  .app-shell .page-layout{
+    padding-top:5px!important;
+  }
+  .home-page .game-arena-strip.game-arena-compact{
+    margin-top:0!important;
+    margin-bottom:7px!important;
+  }
+  .home-page .club-circles-section{
+    margin-top:0!important;
+    margin-bottom:3px!important;
+    padding-top:6px!important;
+    padding-bottom:6px!important;
+  }
+  .home-page .club-circles-heading{
+    margin-bottom:5px!important;
+  }
+  .home-page .feed-heading{
+    margin-top:1px!important;
+    margin-bottom:6px!important;
+  }
+  .home-page .topic-tabs{
+    margin-bottom:5px!important;
+  }
+  .home-page .quick-compose{
+    margin-bottom:6px!important;
+  }
+}
