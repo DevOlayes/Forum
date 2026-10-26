@@ -3196,3 +3196,19 @@ body{background:#101827!important;color:#f6f5f0!important}
 .member-stats-panel>button:hover{background:rgba(199,243,107,.065)!important}
 .member-stats-panel>i{align-self:center;height:36px!important;background:rgba(173,190,214,.2)!important}
 @media(max-width:600px){.home-page .topic-tabs{gap:8px;margin-top:10px;margin-bottom:14px}.home-page .topic-tabs>button{min-height:40px;padding:0 16px;font-size:12px}.member-stats-panel{padding:10px 4px!important}.member-stats-panel>button{min-height:69px}.member-stats-panel>button strong{font-size:21px!important}.member-stats-panel>button span{font-size:11px!important}.member-stats-panel>button small{font-size:9px}}
+
+
+/* Feed identity hierarchy: author first, category + clubhouse directly beneath */
+.feed-author-trigger .post-meta{display:flex;align-items:center;flex-wrap:wrap;gap:5px 6px;margin-top:4px;min-width:0;line-height:1.35}
+.feed-author-trigger .feed-category{display:inline-flex;align-items:center;color:#c7f36b!important;font-size:10px;font-weight:850;letter-spacing:.045em;text-transform:uppercase}
+.feed-author-trigger .feed-category-transfers{color:#e7c878!important}
+.feed-author-trigger .feed-category-tactics{color:#91b8ff!important}
+.feed-author-trigger .feed-category-debate{color:#d6a7ff!important}
+.feed-author-trigger .feed-category-refereeing{color:#ffb29e!important}
+.feed-author-trigger .feed-category-default{color:#c7f36b!important}
+.feed-author-trigger .post-meta-separator{color:#627189!important;font-size:10px}
+.feed-author-trigger .feed-origin{font-size:10px!important;font-weight:650!important;letter-spacing:0!important;color:#b6c2d2!important;text-transform:none!important}
+.feed-author-trigger .feed-post-time{font-size:10px;color:#8f9db1!important;white-space:nowrap}
+.post-content{padding-top:2px}
+.post-content>.post-title-button{margin-top:0}
+@media(max-width:600px){.feed-author-trigger .post-meta{gap:4px 5px;margin-top:3px}.feed-author-trigger .feed-category,.feed-author-trigger .feed-origin,.feed-author-trigger .feed-post-time{font-size:9px!important}.post-content{padding-top:1px}}
