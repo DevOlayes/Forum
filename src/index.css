@@ -3323,3 +3323,33 @@ body{background:#101827!important;color:#f6f5f0!important}
   .post-actions>button:not(.reaction-action):not(.share-action){padding:0 3px;min-width:26px}
   .post-actions .share-action{margin-left:2px}
 }
+
+
+/* Full-width, evenly distributed mobile engagement rail with safe side gutters. */
+.home-posts-list .post-card .post-footer,
+.post-card .post-footer{width:100%;box-sizing:border-box}
+.home-posts-list .post-card .post-actions,
+.post-card .post-actions{
+  display:flex!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  justify-content:space-between!important;
+  align-items:center!important;
+  gap:8px!important;
+  padding-inline:2px!important;
+}
+.home-posts-list .post-card .post-actions>* ,
+.post-card .post-actions>*{min-width:0}
+@media(max-width:600px){
+  .home-posts-list .post-card .post-actions,
+  .post-card .post-actions{
+    width:100%!important;
+    justify-content:space-between!important;
+    gap:6px!important;
+    padding-inline:2px!important;
+  }
+  .home-posts-list .post-card .post-actions .content-view-count,
+  .post-card .post-actions .content-view-count{margin-right:0!important}
+  .home-posts-list .post-card .post-actions .reaction-action,
+  .post-card .post-actions .reaction-action{padding-inline:11px!important;flex:0 0 auto!important}
+}
