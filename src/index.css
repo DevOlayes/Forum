@@ -4268,3 +4268,11 @@ body{background:#101827!important;color:#f6f5f0!important}
   content:""!important;display:inline-block!important;width:5px!important;height:5px!important;flex:0 0 5px!important;
   border-radius:50%!important;background:#c7f36b!important;
 }
+
+
+/* Keep each commenter's primary clubhouse directly beneath their display name. */
+.discussion-replies .comment-author{align-items:flex-start!important;}
+.discussion-replies .comment-author .comment-identity{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:4px!important;min-width:0!important;flex:0 1 auto!important;}
+.discussion-replies .comment-author .comment-identity>strong{display:block!important;line-height:1.25!important;}
+.discussion-replies .comment-author .comment-clubhouse{display:inline-flex!important;align-self:flex-start!important;order:initial!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#c7f36b!important;font-size:10px!important;font-weight:750!important;line-height:1.25!important;white-space:normal!important;}
+.discussion-replies .comment-author .comment-clubhouse:before{display:none!important;}
