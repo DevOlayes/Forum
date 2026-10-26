@@ -4524,3 +4524,14 @@ body{background:#101827!important;color:#f6f5f0!important}
 .nested-comment .comment-author>button{grid-column:3!important;grid-row:1!important;justify-self:end!important;margin-left:0!important;}
 .detail-post-author .post-more{margin-left:6px!important;flex:0 0 28px!important;}
 .post-top .post-more{margin-left:0!important;flex:0 0 28px!important;}
+
+
+/* With the unused three-dot menus removed, keep comment timestamps at the right edge. */
+.comment-item .comment-author,
+.nested-comment .comment-author{grid-template-columns:minmax(0,1fr) auto!important;column-gap:6px!important;}
+.comment-item .comment-author>span,
+.nested-comment .comment-author>span{grid-column:2!important;grid-row:1!important;justify-self:end!important;}
+.comment-item .comment-author>button,
+.nested-comment .comment-author>button{display:none!important;}
+.post-top .post-more,
+.detail-post-author .post-more{display:none!important;}
