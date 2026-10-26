@@ -3212,3 +3212,13 @@ body{background:#101827!important;color:#f6f5f0!important}
 .post-content{padding-top:2px}
 .post-content>.post-title-button{margin-top:0}
 @media(max-width:600px){.feed-author-trigger .post-meta{gap:4px 5px;margin-top:3px}.feed-author-trigger .feed-category,.feed-author-trigger .feed-origin,.feed-author-trigger .feed-post-time{font-size:9px!important}.post-content{padding-top:1px}}
+
+
+/* Content readership indicators across feed, featured lists and discussion detail */
+.content-view-count{display:inline-flex;align-items:center;justify-content:center;gap:5px;color:#aebbd0!important;font-size:12px;font-weight:650;white-space:nowrap;line-height:1.3}
+.content-view-count svg{flex:0 0 auto;color:#91a2ba;stroke-width:1.9}
+.featured-topic-stats .content-view-count{margin-right:2px}
+.detail-post-actions .content-view-count{margin-right:auto;padding-right:8px}
+.post-actions .content-view-count{margin-right:auto}
+.clubhouse-meta .clubhouse-content-views{color:#aebbd0}
+@media(max-width:600px){.content-view-count{font-size:11px;gap:4px}.featured-topic-stats .content-view-count{flex-basis:auto}.detail-post-actions{flex-wrap:wrap;gap:12px}.detail-post-actions .content-view-count{margin-right:0}.post-actions{flex-wrap:wrap;gap:10px}.post-actions .content-view-count{margin-right:0}}
