@@ -4721,3 +4721,144 @@ body{background:#101827!important;color:#f6f5f0!important}
     margin-bottom:3px!important;
   }
 }
+
+
+/* Focused usability pass: keep the existing design while making the key actions easier to reach. */
+@media(max-width:760px){
+  /* Preserve the wordmark and let the search field take the remaining width. */
+  .topbar-inner>.brand-button{
+    flex:0 0 auto!important;
+    width:auto!important;
+    max-width:none!important;
+    overflow:visible!important;
+  }
+  .topbar-inner .brand-mark{
+    flex-shrink:0!important;
+    white-space:nowrap!important;
+    font-size:clamp(13px,3.5vw,16px)!important;
+  }
+  .topbar-inner>.search-box{
+    flex:1 1 70px!important;
+    width:auto!important;
+    min-width:50px!important;
+    max-width:190px!important;
+    padding-left:6px!important;
+    padding-right:6px!important;
+    gap:5px!important;
+  }
+  .topbar-inner>.search-box input{
+    min-width:0!important;
+    font-size:10px!important;
+  }
+  /* On small screens, prioritise the form over the decorative story panel so the
+     complete sign-in/create-account flow can fit without unnecessary scrolling. */
+  .auth-layout{
+    width:calc(100% - 24px)!important;
+    margin:8px auto 14px!important;
+    display:block!important;
+  }
+  .auth-layout>.auth-story{
+    display:none!important;
+  }
+  .auth-card{
+    padding:16px 16px 14px!important;
+    border-radius:15px!important;
+  }
+  .auth-card h2{
+    margin:4px 0!important;
+    font-size:23px!important;
+  }
+  .auth-card>p:not(.auth-disclaimer){
+    margin-bottom:10px!important;
+    line-height:1.45!important;
+  }
+  .auth-card .field-label{
+    margin:9px 0 4px!important;
+  }
+  .auth-card .form-control{
+    min-height:39px!important;
+    padding:8px 10px!important;
+  }
+  .auth-card .terms-check{
+    margin:10px 0!important;
+  }
+  .auth-submit{
+    min-height:40px!important;
+    margin-top:2px!important;
+  }
+  .auth-divider{
+    margin:10px 0!important;
+  }
+  .auth-google-button{
+    min-height:39px!important;
+  }
+  .auth-disclaimer{
+    margin:8px 0 0!important;
+  }
+  .auth-switch{
+    margin-top:10px!important;
+  }
+  /* Reclaim a little vertical room above the composer without resizing club crests. */
+  .game-arena-strip.game-arena-compact{
+    margin-top:5px!important;
+    margin-bottom:10px!important;
+  }
+  .game-arena-compact .game-arena-banner{
+    padding-bottom:7px!important;
+  }
+  .game-arena-compact .game-arena-join{
+    padding:7px 9px!important;
+  }
+  .game-arena-compact .game-arena-fixture{
+    padding-top:4px!important;
+    padding-bottom:4px!important;
+  }
+  .club-circles-section{
+    padding-top:6px!important;
+    padding-bottom:4px!important;
+    margin-bottom:5px!important;
+  }
+  .club-circles-heading{
+    margin-bottom:3px!important;
+  }
+  .feed-heading{
+    margin-top:14px!important;
+    margin-bottom:7px!important;
+  }
+  .topic-tabs{
+    padding-bottom:5px!important;
+    margin-bottom:6px!important;
+  }
+  .quick-compose{
+    margin:8px 0!important;
+    padding:9px 10px!important;
+  }
+  .right-footer{
+    gap:6px!important;
+    padding:5px 2px!important;
+  }
+}
+@media(max-width:390px){
+  .topbar-inner{
+    gap:5px!important;
+    padding-left:7px!important;
+    padding-right:7px!important;
+  }
+  .topbar-inner>.brand-button{
+    max-width:none!important;
+  }
+  .topbar-inner .brand-mark{
+    font-size:12px!important;
+    gap:5px!important;
+  }
+  .topbar-inner .brand-icon{
+    width:25px!important;
+    height:25px!important;
+    flex-basis:25px!important;
+  }
+  .topbar-inner>.search-box{
+    flex-basis:50px!important;
+    min-width:45px!important;
+    max-width:145px!important;
+  }
+}
